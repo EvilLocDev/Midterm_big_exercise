@@ -1,0 +1,244 @@
+/* Navigation */
+.navbar-tool {
+  width: 100%;
+  height: 35px;
+  background: var(--primary-color);
+  text-align: right;
+  padding-right: 27.5px;
+  top: 0;
+  position: relative;
+}
+
+.navbar-tool .tool--icon {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin: 0 7.5px;
+  transition: color ease-in-out 0.3s;
+  will-change: color;
+}
+
+.navbar-tool .tool--icon:hover {
+  color: var(--white-color);
+}
+
+.navbar-tool .tool--icon--link {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.container-navbar-list {
+  background: rgba(30, 66, 135, 0.8);
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+  position: relative;
+}
+
+.navbar-list > li > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.navbar-list > li > a {
+  color: var(--white-color);
+  padding: 28px 20px 27px;
+  text-transform: uppercase;
+  line-height: 100%;
+  text-decoration: none;
+  display: block;
+  transform: skew(-8.5deg);
+  transition: background ease-in-out 0.3s;
+  will-change: background;
+}
+
+.navbar-list > li > a:hover {
+  background: var(--red-color);
+}
+
+.navbar-list > li:last-child >a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.navbar-logo {
+  background: var(--white-color);
+  transform: skew(-8.5deg);
+  transform-origin: bottom left;
+  border-bottom: 4px solid #D61E33;
+  height: 106px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  margin: 0 35px;
+}
+
+.navbar-logo-link {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-logo-img {
+  width: 90%;
+
+}
+
+/* Slider */
+#slider {
+  position: relative;
+  top: -70.97px;
+  margin: 0 auto;
+  padding-top: 34%;
+  background: url('https://resources.finalsite.net/images/f_auto,q_auto/v1648828319/springlakeparkschoolsorg/imskcoocux8ym8s4bybr/DistrictDiscover_Hero_WEB.jpg') top center/cover no-repeat;
+  z-index: -1;
+}
+
+#slider .text-content {
+  position: absolute;
+  padding-bottom: 47px;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+  text-shadow: 0 0 1px #000;
+}
+
+/* Notification */
+.tour-section {
+  background-color: #E5E5E5;
+}
+
+.content-section {
+  width: 800px;
+  max-width: 100%;
+  padding: 64px 0 112px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.places-list
+{
+  margin-top:16px;
+}
+
+.place-img
+{
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body
+{
+  font-size: 15px;
+  padding: 16px;
+  background-color: #fff;
+}
+.place-heading
+{
+  font-size: 15px;
+  font-weight: 550;
+
+}
+.place-time
+{
+  margin-top: 15px;
+  opacity: 0.6;
+}
+.place-desc
+{
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Footer */
+.school_footer {
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.footer__adress {
+  color: var(--white-color);
+}
+
+.footer__content::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  width: 810px;
+  height: 1px;
+  top: 200px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__socials {
+  font-size: 24px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.footer__socials a:hover {
+  color: rgba(255, 255 , 255, 0.4);
+}
+
+.footer__socials a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 32px 0 56px 0;
+  margin-bottom: 0;
+  background-color: var(--primary-color);
+}
