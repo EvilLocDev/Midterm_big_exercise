@@ -1,14 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid #000;
-}
 
 :root{
     --color-header-map: #214589;
@@ -17,6 +6,10 @@ body{
 .flex{
     display: flex;
     
+}
+
+.map{
+    background-color: #e5e5e5;
 }
 
 /* TIÊU ĐỀ CHÍNH CỦA TRANG */
@@ -52,7 +45,8 @@ h2.header-map{
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     padding: 0.5rem;
-
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 /* CLASS CHỨA MAP CÁC CƠ SỞ */
