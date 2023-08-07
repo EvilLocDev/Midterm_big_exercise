@@ -1,0 +1,32 @@
+section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.side-bar{
+    width: 20%;
+    background-color: #e5e5e5;
+}
+
+.main-content{
+    width: 80%;
+    background-color: green;
+}
+
+.menu > li{
+    padding: 0.5rem;
+    background-color: #435c8c;
+    list-style-type: none;
+}
+
+.menu > li > a{ 
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
