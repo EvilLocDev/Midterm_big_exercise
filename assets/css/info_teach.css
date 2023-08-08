@@ -1,3 +1,4 @@
+/* CSS PHẦN THONG TIN TRƯỜNG */
 section{
     width: 100%;
     margin: 0;
@@ -12,6 +13,7 @@ section{
 .side-bar{
     width: 20%;
     background-color: #e5e5e5;
+    position: relative;
 }
 
 .main-content{
@@ -19,14 +21,57 @@ section{
     background-color: green;
 }
 
+.menu {
+    position: relative;
+
+}
+
 .menu > li{
     padding: 0.5rem;
     background-color: #435c8c;
     list-style-type: none;
+    display: inline-block;
+    width: 100%;
+
 }
 
 .menu > li > a{ 
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.menu > li:hover{
+    transition: background ease-in-out 0.3s;
+    background-color: red;
+}
+.sub-menu{
+    position: relative;
+    width: 100%;
+    display: none;
+    
+}
+
+.sub-menu > li{
+    padding: 0.5rem;
+    background-color: #78a3f1;
+    list-style-type: none;
+    margin-top: 0.3rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.sub-menu > li > a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.menu > li:active > .sub-menu{
+    display: block;
 }
