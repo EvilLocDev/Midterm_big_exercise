@@ -71,7 +71,7 @@ section{
     padding: 0.5rem;
     font-size: 0.8rem;
 }
-
-.menu > li:active > .sub-menu{
+/* nên sửa thành click */
+.menu > li:hover> .sub-menu{
     display: block;
 }
