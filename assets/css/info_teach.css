@@ -72,6 +72,6 @@ section{
     font-size: 0.8rem;
 }
 /* nên sửa thành click */
-.menu > li:hover> .sub-menu{
-    display: block;
+.block{
+    display: block !important;
 }
