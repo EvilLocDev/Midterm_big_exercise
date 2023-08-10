@@ -1,4 +1,6 @@
-var a = document.querySelector('.menu > li:child(2) > a');
-a.onclick = function(){
-    a.querySelector('ul.sub-menu').style.display = "block";
-}
+// Click để mở sub-menu
+let clickSubMenu = document.querySelector('.menu li p');
+let subMenu = document.querySelector('.sub-menu');
+clickSubMenu.addEventListener('click', function() {
+    subMenu.classList.add('block');
+})

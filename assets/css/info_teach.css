@@ -14,11 +14,12 @@ section{
     width: 20%;
     background-color: #e5e5e5;
     position: relative;
+    border-right: 1px black solid;
 }
 
 .main-content{
     width: 80%;
-    background-color: green;
+    background-color: #e5e5e5;
 }
 
 .menu {
@@ -39,8 +40,16 @@ section{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5rem;
     font-size: 0.8rem;
+}
+
+.menu > li > p{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
 }
 
 .menu > li:hover{
@@ -71,7 +80,38 @@ section{
     padding: 0.5rem;
     font-size: 0.8rem;
 }
+
+.sub-menu > li:hover {
+    transition: background ease-in-out 0.3s;
+    background-color: rgb(249, 105, 105);
+}
 /* nên sửa thành click */
 .block{
     display: block !important;
+}
+
+/* ========= CSS PHẦN GIỚI THIỆU VỀ TRƯỜNG */
+.heading{
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px lightgreen;
+}
+
+.content, ol, ul.sub-gioi-thieu{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+ol > li > ul.sub-gioi-thieu > li{
+    list-style-type: disc; 
+}
+
+ul > li > ul > li{
+    list-style-type: circle ; 
+
+}
+
+div.content-gioi-thieu{
+    line-height: 1.6rem;
 }
