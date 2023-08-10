@@ -1,0 +1,85 @@
+
+:root{
+    --color-header-map: #214589;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.map{
+    background-color: #e5e5e5;
+}
+
+/* TIÊU ĐỀ CHÍNH CỦA TRANG */
+.map > div:first-child{
+    background-color: var(--color-header-map);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+div > h1.header-map{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px gray;
+}
+
+/* CLASS VỊ TRÍ CÁC CƠ SỞ */
+.position{
+    width: 100%;
+}
+.position > div{
+    margin: 0.2rem;
+}
+
+/* TIÊU ĐỀ PHỤ CỦA TRANG */
+.header-map{
+    text-transform: uppercase;
+}
+
+h2.header-map{
+    width: 15%;
+    background-color: #91b4f3;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* CLASS CHỨA MAP CÁC CƠ SỞ */
+.address{
+    justify-content: space-between;
+
+}
+
+.address > div{
+    border: 1px solid #000;
+    width: 48%;
+}
+
+.sub-address{
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 0.2rem;
+}
+
+.sub-address > h3{
+    background-color: aqua;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0.5rem;
+}
+
+.sub-address > h3:hover{
+    background-color: #5a8ff1;
+}
+
+/* CSS MAP CỦA CƠ SỞ */
+.sub-address > div > iframe{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
