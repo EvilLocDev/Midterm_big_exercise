@@ -1,4 +1,9 @@
 /* CSS PHẦN THONG TIN TRƯỜNG */
+body{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
 section{
     width: 100%;
     margin: 0;
@@ -11,14 +16,14 @@ section{
 }
 
 .side-bar{
-    width: 20%;
+    width: 15%;
     background-color: #e5e5e5;
     position: relative;
     border-right: 1px black solid;
 }
 
 .main-content{
-    width: 80%;
+    width: 85%;
     background-color: #e5e5e5;
 }
 
@@ -103,15 +108,21 @@ section{
     padding-right: 1.5rem;
 }
 
-ol > li > ul.sub-gioi-thieu > li{
+.sub-gioi-thieu{
     list-style-type: disc; 
+
 }
 
-ul > li > ul > li{
-    list-style-type: circle ; 
+ul.sub-of-sub > li{
+    list-style-type: circle; 
 
 }
 
 div.content-gioi-thieu{
     line-height: 1.6rem;
+}
+
+.sub-gioi-thieu > li > a{
+    text-decoration: none;
+    color: rgb(17, 17, 206);
 }
