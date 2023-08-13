@@ -4,6 +4,7 @@ body{
     margin: 0; 
     padding: 0;
 }
+
 section{
     width: 100%;
     margin: 0;
@@ -91,17 +92,39 @@ section{
     transition: background ease-in-out 0.3s;
     background-color: rgb(249, 105, 105);
 }
-/* nên sửa thành click */
+
 .block{
     display: block !important;
 }
 
+.thong-ke{
+    margin-top: 0.5rem;
+    width: 100%;
+    border: 2px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 5px;
+}
+
+.thong-ke > tr{
+
+}
+
+.thong-ke th{
+    background-color: #435c8c;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.thong-ke td{
+    padding: 0.2rem;
+}
 /* ========= CSS PHẦN GIỚI THIỆU VỀ TRƯỜNG */
 .heading{
     color: gray;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 3px 3px lightgreen;
+    padding: 10px;
 }
 
 .content, ol, ul.sub-gioi-thieu{
