@@ -25,6 +25,10 @@ section{
 .main-content{
     width: 85%;
     background-color: #e5e5e5;
+    border: 2px solid rgb(211, 126, 126);
+    margin-left: 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .menu {
@@ -42,7 +46,7 @@ section{
 }
 
 .menu > li:first-child{
-    padding: 0.5rem;
+    padding-bottom: 1rem;
 
 }
 
@@ -51,6 +55,8 @@ section{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.8rem;
+    display: inline-block;
+    width: 100%;
 }
 
 .menu > li > span{
@@ -149,4 +155,12 @@ div.content-gioi-thieu{
 .sub-gioi-thieu > li > a{
     text-decoration: none;
     color: rgb(17, 17, 206);
+}
+
+ol > li{
+    font-weight: 700;
+}
+
+ol > li > ul{
+    font-weight: 100;
 }
