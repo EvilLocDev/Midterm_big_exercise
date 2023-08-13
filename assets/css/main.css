@@ -27,7 +27,7 @@
 }
 
 .container-navbar-list {
-  background: rgba(30, 66, 135, 0.8);
+  background: rgba(30, 66, 135, 0.9);
 }
 
 .navbar-list {
@@ -103,10 +103,10 @@
 /* Slider */
 #slider {
   position: relative;
-  top: -70.97px;
+  top: 0;
   margin: 0 auto;
   padding-top: 34%;
-  background: url('https://resources.finalsite.net/images/f_auto,q_auto/v1648828319/springlakeparkschoolsorg/imskcoocux8ym8s4bybr/DistrictDiscover_Hero_WEB.jpg') top center/cover no-repeat;
+  background: url('../img/Go\ to\ school!.png') top center/cover no-repeat;
   z-index: -1;
 }
 
@@ -160,13 +160,12 @@
 
 .places-list
 {
-  margin-top:16px;
+  margin-top: 16px;
 }
 
 .place-img
 {
-  width: 100%;
-  display: block;
+  padding-top: 70%;
 }
 
 .place-img:hover {
@@ -181,8 +180,17 @@
 }
 .place-heading
 {
+  height: 60px;
   font-size: 15px;
   font-weight: 550;
+  line-height: 30px;
+  overflow: hidden;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  text-overflow: ellipsis;
 
 }
 .place-time
@@ -200,6 +208,7 @@
 .school_footer {
   background-color: var(--primary-color);
   position: relative;
+  padding: 4px 0;
 }
 
 .footer__adress {
@@ -218,6 +227,7 @@
 .footer__content {
   display: flex;
   justify-content: space-around;
+  line-height: 48px;
 }
 
 .footer__socials {
