@@ -20,12 +20,14 @@ section{
     width: 15%;
     background-color: #e5e5e5;
     position: relative;
-    border-right: 1px black solid;
+    /* border-right: 1px black solid; */
+    /* border: 2px solid gray; */
+
 }
 .main-content{
     width: 85%;
     background-color: #e5e5e5;
-    border: 2px solid rgb(211, 126, 126);
+    border: 2px solid gray;
     margin-left: 0.3rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -33,7 +35,7 @@ section{
 
 .menu {
     position: relative;
-
+    margin-top: 0.3rem;
 }
 
 .menu > li{
@@ -46,7 +48,7 @@ section{
 }
 
 .menu > li:first-child{
-    padding-bottom: 1rem;
+    padding: 0.5rem;
 
 }
 
