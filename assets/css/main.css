@@ -1,3 +1,12 @@
+/* Header */
+.school_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 /* Navigation */
 .navbar-tool {
   width: 100%;
@@ -27,7 +36,7 @@
 }
 
 .container-navbar-list {
-  background: rgba(30, 66, 135, 0.9);
+  background: rgba(30, 66, 135, 0.8);
 }
 
 .navbar-list {
@@ -104,7 +113,7 @@
 #slider {
   position: relative;
   top: 0;
-  margin: 0 auto;
+  margin: 35px auto 0;
   padding-top: 34%;
   background: url('../img/Go\ to\ school!.png') top center/cover no-repeat;
   z-index: -1;
@@ -129,7 +138,15 @@
 }
 
 /* Notification */
-.tour-section {
+.tour-section--notis {
+  background-color: #E5E5E5;
+}
+
+.tour-section--activities {
+  background-color: var(--primary-color);
+}
+
+.tour-section--documents {
   background-color: #E5E5E5;
 }
 
@@ -150,12 +167,20 @@
   letter-spacing: 4px;
 }
 
+.section-heading--bright {
+  color: var(--white-color);
+}
+
 .section-sub-heading {
   font-size: 15px;
   text-align: center;
   padding-top: 25px;
   font-style: italic;
   opacity: 0.6;
+}
+
+.section-sub-heading--bright {
+  color: var(--white-color);
 }
 
 .places-list
@@ -166,6 +191,7 @@
 .place-item {
   position: relative;
   transition: scale ease 0.4s;
+  border-radius: 2px;
 }
 
 .place-item:hover {
@@ -211,6 +237,76 @@
 {
   margin-top: 15px;
   line-height: 1.4;
+}
+
+/* Club */
+.club-category {
+  background-color: #E5E5E5;
+  border-radius: 2px;
+}
+
+.club-category__heading {
+  color: var(--text-color);
+  padding: 16px 16px 0;
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.club-category__heading-icon {
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.club-category__list {
+  padding: 0 0 40px 0;
+  list-style: none;
+}
+
+.club-category__item {
+  position: relative;
+  margin: 16px;
+}
+
+.club-category__item:hover {
+  transition: transform linear 0.2s;
+}
+
+.club-category__item:hover {
+  transform: translateX(-4px);
+}
+
+.club-category__item-desc {
+  position: absolute;
+  bottom: 6px;
+  left: -8px;
+  width: calc(100% + 4px);
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  font-size: 14px;
+  color: var(--white-color);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #E5E5E5;
+}
+
+.club-category__item::before {
+  content: "";
+  border-top: 1px solid #000;
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  right: 20px;
+}
+
+.club-category__item-img
+{
+  padding: 40% 0 4px 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
 }
 
 /* Modal notification */
