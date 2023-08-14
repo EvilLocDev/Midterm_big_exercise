@@ -20,8 +20,9 @@ section{
     width: 15%;
     background-color: #e5e5e5;
     position: relative;
-    /* border-right: 1px black solid; */
-    /* border: 2px solid gray; */
+    border-right: 1px black solid;
+    border: 2px solid gray;
+    margin-top: 0.3rem;
 
 }
 .main-content{
@@ -29,13 +30,14 @@ section{
     background-color: #e5e5e5;
     border: 2px solid gray;
     margin-left: 0.3rem;
-    padding-top: 1rem;
     padding-bottom: 2rem;
+    margin-top: 0.3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .menu {
     position: relative;
-    margin-top: 0.3rem;
 }
 
 .menu > li{
@@ -101,6 +103,10 @@ section{
     background-color: rgb(249, 105, 105);
 }
 
+.color-click{
+    background-color: rgb(249, 105, 105) !important;
+}
+
 .block{
     display: block !important;
 }
@@ -111,10 +117,6 @@ section{
     border: 2px solid #000;
     border-right: 1px solid #000;
     border-radius: 5px;
-}
-
-.thong-ke > tr{
-
 }
 
 .thong-ke th{
@@ -135,7 +137,7 @@ section{
     padding: 10px;
 }
 
-.content, ol, ul.sub-gioi-thieu{
+ol, ul.sub-gioi-thieu{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -154,6 +156,20 @@ div.content-gioi-thieu{
     line-height: 1.6rem;
 }
 
+div.content-gioi-thieu > h4{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+div.content-gioi-thieu p::first-letter{
+    padding-left: 2rem;
+}
+
+div.content-gioi-thieu p:not(:first-child){
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .sub-gioi-thieu > li > a{
     text-decoration: none;
     color: rgb(17, 17, 206);
@@ -165,4 +181,9 @@ ol > li{
 
 ol > li > ul{
     font-weight: 100;
+}
+
+ul.list-member{
+    list-style-type: decimal;
+    padding-left: 4rem;
 }

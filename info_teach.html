@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./javascript/info.js"></script>
 </head>
 <body>
     <div class="school">
@@ -99,7 +101,7 @@
                             <li>
                                 <span>bài viết tổ <i class="fa-solid fa-caret-down"></i></span>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Tổ văn phòng</a></li>
+                                    <li class="color-click"><a href="#to-van-phong" >Tổ văn phòng</a></li>
                                     <li><a href="#">Tổ Ngữ văn</a></li>
                                     <li><a href="#">Tổ Ngoại ngữ</a></li>
                                     <li><a href="#">Tổ Sử - Địa - GDCD</a></li>
@@ -139,7 +141,7 @@
                 </div>
             </div>
             <div class="main-content">
-                <div class="content">
+                <div class="content" id="main">
                     <div>
                         <h1 class="heading">đôi nét giới thiệu về trường THPT Nguyễn Thị LiSa </h1>
                     </div>
@@ -215,12 +217,43 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="to-van-phong">
-                <div class="heading-bai-viet">
-                    Giới thiệu tổ văn phòng
+                <div class="to-van-phong">
+                    <div class="heading-bai-viet heading">
+                        <h1>Giới thiệu tổ văn phòng</h1>
+                    </div>
+                    <div class="content-gioi-thieu">
+                        <h4>"Sẵn sàng phục vụ"</h4>
+                        <p>Khác với các tổ chuyên môn trong nhà trường, 
+                            tổ Hành chính-Quản trị gồm các thành viên với các nhiệm vụ hoàn toàn khác nhau, 
+                            khó có thể thay thế cho nhau trong công việc. Vì thế các thành viên hầu hoạt động đồng thời, 
+                            linh hoạt mới có thể hỗ trợ nhau hoàn thành công việc “bếp núc” của nhà trường. 
+                            Dẫu không trực tiếp đứng lớp, nhưng chúng tôi rất tự hào về công việc của Tổ đảm nhận,
+                            vì hầu như trong mọi thành quả của nhà trường đều có mồ hôi công sức của anh chị em Tổ Hành chính-Quản trị chúng tôi !
+                        </p>
+                        <p>
+                            Từ các tổ trưởng Nguyễn Ngọc Dũng, Nguyễn Hàng, Võ Văn Ngọc, Huỳnh Bá Kỷ, 
+                            đến nay là Bùi Thị Hồng luôn luôn hoàn thành công việc được giao và sẵn sàng phục vụ công việc hậu cần 
+                            đảm bảo cho các thầy cô giáo dạy tốt và các em học sinh học tốt. Đến nay Tổ đã ổn định với các công việc
+                            chuyên môn của từng người và sẽ phấn đấu học tập nâng cao nghiệp vụ với mong muốn phục vụ kịp thời việc đổi mới dạy học trong nhà trường.
+                        </p>
+                        <p style="text-transform: uppercase">
+                            danh sách cán bộ tổ hành chính - quản trị:
+                            <ul class="list-member">
+                                <li>Bùi Thị Hồng (Tổ trưởng tổ văn phòng)</li>
+                                <li>Trần Thị Mỹ Ái</li>
+                                <li>Nguyễn Đức Hiếu</li>
+                                <li>Trần Thị Vân Anh </li>
+                                <li>Nguyễn Dương Đình Bảo   </li>
+                                <li>Nguyễn Thị Phương Trúc</li>
+                                <li>Nguyễn Thị Phương Trúc</li>
+                                <li>Nguyễn Thị Hiếu</li>
+                                <li>Huỳnh Đình Tâm</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
+            
         </section>
 
         <!-- Footer -->
@@ -252,9 +285,7 @@
             <p class="copyright">© 2015 - Bản quyền thuộc về Công ty ST channel</p>
         </footer>
         <!-- Kết thúc Footer -->
-
+        
     </div>
-    <div>hello</div>
-    <script src="./javascript/info.js"></script>
 </body>
 </html>
