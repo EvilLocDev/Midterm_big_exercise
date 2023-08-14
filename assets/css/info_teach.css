@@ -85,12 +85,13 @@ section{
 
 .sub-menu > li{
     width: 100%;
-    padding: 0.5rem;
     background-color: #78a3f1;
     list-style-type: none;
 }
 
 .sub-menu > li > a{
+    display: inline-block;
+    width: 100%;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -99,8 +100,9 @@ section{
 }
 
 .sub-menu > li:hover {
-    transition: background ease-in-out 0.3s;
-    background-color: rgb(249, 105, 105);
+    /* transition: background ease-in-out 0.3s;
+    background-color: rgb(249, 105, 105); */
+    background-color: lightslategray;
 }
 
 .color-click{
@@ -186,4 +188,60 @@ ol > li > ul{
 ul.list-member{
     list-style-type: decimal;
     padding-left: 4rem;
+}
+
+.anh-minh-hoa{
+    width: 30%;
+    float: left;
+    margin: 0.3rem;
+}
+
+.anh-minh-hoa > img{
+    width: 100%;
+}
+
+.anh-to-van{
+    width: 100%;
+}
+
+.anh-to-van > div{
+    width: 100%;
+    text-align: center;
+
+}
+
+.anh-to-van > div > p{
+    text-align: center;
+
+}
+
+.anh-to-van > div > img{
+    display: inline-block;
+    width: 50%
+    /* padding: 0.5rem 0.5rem 0 0.5rem; */
+}
+
+#chuyen-mon{
+    background-color: red;
+}
+
+.sub-picture{
+    width:15%;
+    margin-right: 10px;
+}
+
+.short-content{
+    width: 100%;
+}
+
+.sub-picture > img{
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #000;
+}
+
+.short-content > h3 > a{
+    text-decoration: none;
+    color: #000;
 }

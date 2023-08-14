@@ -7,12 +7,17 @@ $(document).ready(() => {
             subMenu[i].classList.toggle('block');
         })
     };
-
-    $(".main-content > div:not(#main)").hide();
-    $("sub-menu > li > a").click(function() {
-        $("sub-menu > li > a").parent().remove("color-click");
+    //ẩn nội dung sub-content
+    // $(".main-content > div:not(#main)").hide();
+    $(".sub-menu a").click(function() {
+        // click mở tab
+        $(".sub-menu a").parent().removeClass("color-click");
         $(this).parent().addClass("color-click");
-    })
+         // click mở nội dung tương ứng
+        $(".main-content > div").hide();
+        $($(this).attr("href")).show();
+        
+    });
 })
 
 
