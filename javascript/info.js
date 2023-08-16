@@ -19,11 +19,22 @@ $(document).ready(() => {
         
     });
     // Số lượt truy cập vào cuộc thi
-    let viewTest = 0;
-    $(".short-content h3 > a").click(function() {
-        viewTest++;
-        $(this).parent().parent().find(".view").html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
-    })
+    // let viewTest = 0;
+    // $(".short-content h3 > a").click(function() {
+    //     viewTest++;
+    //     $(this).parent().parent().find(".view").html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
+    // })
+    let totalClassView = document.querySelectorAll(".view");
+    let click = document.querySelectorAll(".short-content h3 a");
+    for(var i = 0; i < totalClassView.length; i++) {
+        click[i].click(function (){
+    //         // totalClassView[i].innerHTML = `<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest;
+            console.log("hello");
+        })
+    }
+    
 })
+
+
 
 
