@@ -221,17 +221,22 @@ ul.list-member{
     /* padding: 0.5rem 0.5rem 0 0.5rem; */
 }
 
-#chuyen-mon{
-    background-color: red;
+/* CSS phần các kế hoạch chuyên môn */
+
+#chuyen-mon > .flex{
+    background-color: darkgray;
+    border: 1px solid #000;
+    margin: 0.2rem;
 }
 
 .sub-picture{
     width:15%;
-    margin-right: 10px;
+    padding: 0.3rem;
 }
 
 .short-content{
     width: 100%;
+    padding: 0.3rem;
 }
 
 .sub-picture > img{
@@ -241,7 +246,25 @@ ul.list-member{
     border: 1px solid #000;
 }
 
-.short-content > h3 > a{
+.short-content h3 > a{
     text-decoration: none;
     color: #000;
+}
+.sub-info div{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.sub-info div:first-child{
+    margin-top: 0;
+}
+
+.flex > p:first-child{
+    margin-left: 0;
+}
+
+.flex > p{
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

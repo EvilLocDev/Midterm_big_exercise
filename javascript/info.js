@@ -18,6 +18,12 @@ $(document).ready(() => {
         $($(this).attr("href")).show();
         
     });
+    // Số lượt truy cập vào cuộc thi
+    let viewTest = 0;
+    $(".short-content h3 a").click(function() {
+        viewTest++;
+        $(this).parent().parent().children("div:not(:first-child())").children("p:nth-child(2)").html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
+    })
 })
 
 
