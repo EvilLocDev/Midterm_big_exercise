@@ -223,27 +223,32 @@ ul.list-member{
 
 /* CSS phần các kế hoạch chuyên môn */
 
-#chuyen-mon > .flex{
+.box{
     background-color: darkgray;
     border: 1px solid #000;
     margin: 0.2rem;
 }
 
-.sub-picture{
+.box .sub-picture{
     width:15%;
     padding: 0.3rem;
 }
 
-.short-content{
+.box .short-content{
     width: 100%;
     padding: 0.3rem;
 }
 
-.sub-picture > img{
+.box .sub-picture > img{
     display: inline-block;
     width: 100%;
     padding: 2px;
     border: 1px solid #000;
+}
+
+.short-content > h3{
+    text-shadow: 2px 2px 3px rgb(239, 224, 144);
+
 }
 
 .short-content h3 > a{

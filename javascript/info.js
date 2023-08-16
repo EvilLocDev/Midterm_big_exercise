@@ -8,7 +8,7 @@ $(document).ready(() => {
         })
     };
     //ẩn nội dung sub-content
-    // $(".main-content > div:not(#main)").hide();
+    $(".main-content > div:not(#main)").hide();
     $(".sub-menu a").click(function() {
         // click mở tab
         $(".sub-menu a").parent().removeClass("color-click");
@@ -20,9 +20,9 @@ $(document).ready(() => {
     });
     // Số lượt truy cập vào cuộc thi
     let viewTest = 0;
-    $(".short-content h3 a").click(function() {
+    $(".short-content h3 > a").click(function() {
         viewTest++;
-        $(this).parent().parent().children("div:not(:first-child())").children("p:nth-child(2)").html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
+        $(this).parent().parent().find(".view").html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
     })
 })
 
