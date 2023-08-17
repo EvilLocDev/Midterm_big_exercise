@@ -1,12 +1,25 @@
 // Click để mở sub-menu
 $(document).ready(() => {
     let clickSubMenu = document.querySelectorAll('.menu > li > span');
-    let subMenu = document.querySelectorAll('.sub-menu');
+    let subMenu = document.querySelectorAll('li > .sub-menu');
     for (let i = 0; i < clickSubMenu.length; ++i) {
         clickSubMenu[i].addEventListener('click', function() {
             subMenu[i].classList.toggle('block');
         })
     };
+
+    // ẩn hiện nội dung thời khóa biểu
+    $(".main-content > div:not(#main)").hide();
+    $(".menu a").click(function() {
+        // click mở tab
+        $(this).parent().removeClass("color-click");
+        $(this).parent().addClass("color-click");
+         // click mở nội dung tương ứng
+        $(".main-content > div").hide();
+        $($(this).attr("href")).show();
+        
+    });
+
     //ẩn nội dung sub-content
     $(".main-content > div:not(#main)").hide();
     $(".sub-menu a").click(function() {
@@ -19,17 +32,8 @@ $(document).ready(() => {
         
     });
     
-    let viewTest = 0;
-    let totalClassView = $(".view");
-    let click = $(".short-content h3 a");
-    for(let i = 0; i < totalClassView.length; i++) {
-        $((click)[i]).click(function (){
-            viewTest++;
-            $(totalClassView[i]).html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
-            console.log($(totalClassView)[i]);
-        })
-    }
     // Đọc dữ liệu từ file JSON
+    // ===== CHUYÊN MÔN =====
     fetch("./json/chuyen-mon.json")
     .then(function(response) {
         return response.json();
@@ -64,6 +68,7 @@ $(document).ready(() => {
         place.innerHTML = out;
     })
 
+    // ===== CUỘC THI =====
     fetch("./json/cuoc-thi.json")
     .then(function(response) {
         return response.json();
@@ -97,6 +102,17 @@ $(document).ready(() => {
         }
         place.innerHTML = out;
     })
+
+    let viewTest = 0;
+    let totalClassView = $(".view");
+    let click = $(".short-content h3 a");
+    for(let i = 0; i < totalClassView.length; i++) {
+        $((click)[i]).click(function (){
+            viewTest++;
+            $(totalClassView[i]).html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
+            console.log($(totalClassView)[i]);
+        })
+    }
 })
 
 

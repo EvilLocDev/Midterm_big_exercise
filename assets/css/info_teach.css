@@ -274,3 +274,54 @@ ul.list-member{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+/* CSS THỜI KHÓA BIỂU */
+.info-tkb h2{
+    display: inline-block;
+    background-color: rgb(251, 240, 178);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(248, 224, 85);
+    margin-bottom: 0.3rem;
+    text-align: unset;
+    color: #9f0303;
+    text-shadow: 2px 2px 3px rgb(221, 129, 129);
+}
+
+.info-tkb h3{
+    text-align: unset;
+    color: #d73b3b;
+    text-shadow: 2px 2px 3px rgb(221, 129, 129);
+}
+.info-tkb > div div{
+    padding: 10px;
+}
+
+.info-tkb button{
+    padding: 0.3rem;
+    background-color: rgb(255, 238, 143);
+    border: 1px solid #000;
+    box-shadow: 3px 3px 3px #000;
+    border-radius: 5px;
+}
+
+.info-tkb button a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.info-tkb button:hover{
+    opacity: 0.6;
+    background-color: #d73b3b;
+    color: #fff;
+
+}
+
+.info-tkb button:hover > a{
+    color: #fff;
+
+}
+
+div > .flex{
+    justify-content: space-around;
+}
