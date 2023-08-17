@@ -3,6 +3,10 @@
     --color-header-map: #214589;
 }
 
+div.school{
+    width: 100%;
+}
+
 .flex{
     display: flex;
     
@@ -17,7 +21,7 @@
     background-color: var(--color-header-map);
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem;  
 }
 
 div > h1.header-map{
@@ -29,6 +33,7 @@ div > h1.header-map{
 /* CLASS VỊ TRÍ CÁC CƠ SỞ */
 .position{
     width: 100%;
+    padding: 10px 20px;
 }
 .position > div{
     margin: 0.2rem;
@@ -40,7 +45,7 @@ div > h1.header-map{
 }
 
 h2.header-map{
-    width: 15%;
+    width: 20%;
     background-color: #91b4f3;
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;

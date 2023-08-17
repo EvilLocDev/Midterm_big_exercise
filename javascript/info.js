@@ -29,7 +29,74 @@ $(document).ready(() => {
             console.log($(totalClassView)[i]);
         })
     }
-    
+    // Đọc dữ liệu từ file JSON
+    fetch("./json/chuyen-mon.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(informs) {
+        let place = document.querySelector("#chuyen-mon");
+        let out = "";
+        for (let inform of informs) {
+            out += `
+            <div class="flex box">
+                <div class="sub-picture">
+                    <img src="${inform.image}" alt="${inform.name}">
+                </div>
+                <div class="short-content">
+                    <h3>
+                        <a href="${inform.link}">${inform.name}</a>
+                    </h3>
+                    <div class="sub-info">
+                        <div class="flex ">
+                            <p> <i class="fa-regular fa-clock"></i> ${inform.time}</p>
+                            <p class="view"><i class="fa-regular fa-eye"></i> Đã xem: ${inform.view} </p>
+                            <p><i class="fa-regular fa-comment"></i> Phản hồi: ${inform.comment}</p>
+                        </div>
+                        <div>
+                            <p>Đối tượng tham gia: ${inform.member}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+        place.innerHTML = out;
+    })
+
+    fetch("./json/cuoc-thi.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(competitions) {
+        let place = document.querySelector("#cuoc-thi");
+        let out = "";
+        for (let competition of competitions) {
+            out += `
+                <div class="flex box">
+                    <div class="sub-picture">
+                        <img src="${competition.image}" alt="${competition.name}">
+                    </div>
+                    <div class="short-content">
+                        <h3>
+                            <a href="${competition.link}">${competition.name}</a>
+                        </h3>
+                        <div class="sub-info">
+                            <div class="flex ">
+                                <p> <i class="fa-regular fa-clock"></i> ${competition.time}</p>
+                                <p class="view"><i class="fa-regular fa-eye"></i> Đã xem: ${competition.view} </p>
+                                <p><i class="fa-regular fa-comment"></i> Phản hồi: ${competition.comment}</p>
+                            </div>
+                            <div>
+                                <p>Đối tượng tham gia: ${competition.member}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+        place.innerHTML = out;
+    })
 })
 
 

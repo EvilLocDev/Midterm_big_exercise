@@ -242,6 +242,7 @@ ul.list-member{
 .box .sub-picture > img{
     display: inline-block;
     width: 100%;
+    height: 80px;
     padding: 2px;
     border: 1px solid #000;
 }
