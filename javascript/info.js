@@ -22,13 +22,14 @@ $(document).ready(() => {
 
     //ẩn nội dung sub-content
     $(".main-content > div:not(#main)").hide();
-    $(".sub-menu a").click(function() {
+    $(".menu a").click(function() {
         // click mở tab
-        $(".sub-menu a").parent().removeClass("color-click");
+        $(".menu a").parent().removeClass("color-click");
         $(this).parent().addClass("color-click");
-         // click mở nội dung tương ứng
+        // click mở nội dung tương ứng
         $(".main-content > div").hide();
         $($(this).attr("href")).show();
+        $(".menu a").not($(this)).parent().removeClass("color-click");
         
     });
     
