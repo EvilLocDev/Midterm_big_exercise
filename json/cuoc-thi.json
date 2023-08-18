@@ -1,0 +1,34 @@
+[
+    {
+        "image": "./assets/img/anh-cuoc-thi.jpg",
+        "name": "Cuộc thi An toàn giao thông cho nụ cười ngày mai.",
+        "time": "05/05/2023",
+        "view": 0,
+        "comment": 0,
+        "member": "Học sinh"
+    },
+    {
+        "image": "./assets/img/anh-bac-ho.jpg",
+        "name": "Tìm hiểu Di chúc chủ tịch Hồ Chí Minh.",
+        "time": "05/05/2023",
+        "view": 0,
+        "comment": 0,
+        "member": "Học sinh"
+    },
+    {
+        "image": "./assets/img/anh-user.jpg",
+        "name": "Cuộc thi sáng tạo logo trường.",
+        "time": "07/06/2023",
+        "view": 0,
+        "comment": 0,
+        "member": "Giáo viên và học sinh"
+    },
+    {
+        "image": "./assets/img/anh-bao-ve-bien-dao.jpg",
+        "name": "Cuộc thi tìm hiểu về biển đảo Việt Nam.",
+        "time": "07/06/2023",
+        "view": 0,
+        "comment": 0,
+        "member": "Học sinh"
+    }
+]

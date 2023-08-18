@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Cuoc thi",
+        "image": "./assets/img/thong-bao.jpg",
+        "link": "#",
+        "time": "05/05/2023 14:30:00 PM",
+        "view": 0,
+        "comment": 0,
+        "member": "Giáo viên và học sinh"
+    },
+    {
+        "id":2,
+        "name": "Cuoc thi",
+        "image": "./assets/img/thong-bao.jpg",
+        "link": "#",
+        "time": "05/05/2023 14:30:00 PM",
+        "view": 0,
+        "comment": 0,
+        "member": "Giáo viên và học sinh"
+    },
+    {
+        "id": 3,
+        "name": "Cuoc thi",
+        "image": "./assets/img/ke-hoach.jpg",
+        "link": "#",
+        "time": "05/05/2023 14:30:00 PM",
+        "view": 2,
+        "comment": 2,
+        "member": "Giáo viên và học sinh"
+    },
+    {
+        "id": 3,
+        "name": "Cuoc thi",
+        "image": "./assets/img/thong-bao.jpg",
+        "link": "#",
+        "time": "05/05/2023 14:30:00 PM",
+        "view": 2,
+        "comment": 2,
+        "member": "Giáo viên và học sinh"
+    }
+]

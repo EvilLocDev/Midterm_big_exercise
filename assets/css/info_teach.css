@@ -85,12 +85,13 @@ section{
 
 .sub-menu > li{
     width: 100%;
-    padding: 0.5rem;
     background-color: #78a3f1;
     list-style-type: none;
 }
 
 .sub-menu > li > a{
+    display: inline-block;
+    width: 100%;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -99,8 +100,9 @@ section{
 }
 
 .sub-menu > li:hover {
-    transition: background ease-in-out 0.3s;
-    background-color: rgb(249, 105, 105);
+    /* transition: background ease-in-out 0.3s;
+    background-color: rgb(249, 105, 105); */
+    background-color: lightslategray;
 }
 
 .color-click{
@@ -186,4 +188,140 @@ ol > li > ul{
 ul.list-member{
     list-style-type: decimal;
     padding-left: 4rem;
+}
+
+.anh-minh-hoa{
+    width: 30%;
+    float: left;
+    margin: 0.3rem;
+}
+
+.anh-minh-hoa > img{
+    width: 100%;
+}
+
+.anh-to-van{
+    width: 100%;
+}
+
+.anh-to-van > div{
+    width: 100%;
+    text-align: center;
+
+}
+
+.anh-to-van > div > p{
+    text-align: center;
+
+}
+
+.anh-to-van > div > img{
+    display: inline-block;
+    width: 50%
+    /* padding: 0.5rem 0.5rem 0 0.5rem; */
+}
+
+/* CSS phần các kế hoạch chuyên môn */
+
+.box{
+    background-color: darkgray;
+    border: 1px solid #000;
+    margin: 0.2rem;
+}
+
+.box .sub-picture{
+    width:15%;
+    padding: 0.3rem;
+}
+
+.box .short-content{
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.box .sub-picture > img{
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    padding: 2px;
+    border: 1px solid #000;
+}
+
+.short-content > h3{
+    text-shadow: 2px 2px 3px rgb(239, 224, 144);
+
+}
+
+.short-content h3 > a{
+    text-decoration: none;
+    color: #000;
+}
+.sub-info div{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.sub-info div:first-child{
+    margin-top: 0;
+}
+
+.flex > p:first-child{
+    margin-left: 0;
+}
+
+.flex > p{
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* CSS THỜI KHÓA BIỂU */
+.info-tkb h2{
+    display: inline-block;
+    background-color: rgb(251, 240, 178);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(248, 224, 85);
+    margin-bottom: 0.3rem;
+    text-align: unset;
+    color: #9f0303;
+    text-shadow: 2px 2px 3px rgb(221, 129, 129);
+}
+
+.info-tkb h3{
+    text-align: unset;
+    color: #d73b3b;
+    text-shadow: 2px 2px 3px rgb(221, 129, 129);
+}
+.info-tkb > div div{
+    padding: 10px;
+}
+
+.info-tkb button{
+    padding: 0.3rem;
+    background-color: rgb(255, 238, 143);
+    border: 1px solid #000;
+    box-shadow: 3px 3px 3px #000;
+    border-radius: 5px;
+}
+
+.info-tkb button a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.info-tkb button:hover{
+    opacity: 0.6;
+    background-color: #d73b3b;
+    color: #fff;
+
+}
+
+.info-tkb button:hover > a{
+    color: #fff;
+
+}
+
+div > .flex{
+    justify-content: space-around;
 }
