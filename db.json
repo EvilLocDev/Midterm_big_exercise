@@ -1,0 +1,25 @@
+{
+  "general-notification": [
+    {
+      "image": "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/holidays/library/lake-district/great-langdale-campsite/great-langdale-campsite-aerial-view.jpg",
+      "title": "Sắp dời trường qua cơ sở mới",
+      "date": "Fri 27 Nov 2016",
+      "description": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
+      "id": "1"
+    },
+    {
+      "image": "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/wiltshire/places/great-chalfield-manor-and-garden/library/exterior-great-chalfield-manor-wiltshire-151327.jpg",
+      "title": "Đổi cơ chế tính điểm ở học kì này cho học sinh",
+      "date": "Sat 28 Nov 2016",
+      "description": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
+      "id": "2"
+    },
+    {
+      "image": "https://www.greatwolf.com/cdn-cgi/image/fit=scale-down,width=1600/content/dam/greatwolf/sites/www/homepage-php/about-section/gwl-niagara-about-wp.jpg",
+      "title": "Trường sẽ tăng cường học kì 3 cho học sinh",
+      "date": "Sun 29 Nov 2016",
+      "description": "Praesent tincidunt sed tellus ut rutrum sed vitae justo.",
+      "id": "3"
+    }
+  ]
+}
