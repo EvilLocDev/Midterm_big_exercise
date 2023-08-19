@@ -1,5 +1,13 @@
-/* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC */
-@media screen and (max-width: 450px){
+/* PC: > 1024px Tablet&Mobile: < 1024px 
+Tablet: 740px -> 1023 Mobile: < 740px*/
+/* PC 1024px */
+@media (min-width: 1024px) {
+    
+}
+
+/* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
+/*Mobile*//*739px*/
+@media (max-width: 739px) {
     /* sidebar trang info trường */
     .page-info{
         display: block;
@@ -51,8 +59,6 @@
         background-color: #435c8c;
         position: relative;
         border-right: 1px black solid;
-        
-
     }
 
     .menu > li{
@@ -89,47 +95,50 @@
 
 }
 
+/*Tablet & Mobile*//*1023px*/
+@media (max-width: 1023px) {
 
-@media screen and (max-width: 800px) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
     /* header */
     header{
         position: relative;
         
     }
 
-   
-
     /* map */
-    .flex{
+    .flex {
         display: block;
         margin: 0;
     }
-    .position{
+
+    .position {
         padding: 5px 0;
     }
 
-    h2.header-map{
+    h2.header-map {
         width: 90%;
         border-radius: 0%;
         text-align: center;
         margin: 0 auto;
         border-radius: 10px;
     }
-    .address > div{
+
+    .address > div {
         width: 90%;
         margin: 5px auto;
     }
 
-    /* ==== Page info */
+    /* ==== Page info ==== */
 
  
 
      /* Footer */
-     footer{
+    footer{
         width: 100%;
-    }   
-
-    
+    }
 
     .footer__adress-heading{
         margin-left: 1rem;
@@ -147,14 +156,11 @@
         padding-top: 0;
         padding-bottom: 2rem;
     }
-
-    
 }
 
-@media screen and (max-width: 500px) {
-    
+/* Mobile */
+@media screen and (max-width: 739px) {
     .footer__content{
         display: block; 
     }
 }
-
