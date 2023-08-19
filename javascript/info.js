@@ -105,24 +105,18 @@ $(document).ready(() => {
     })
 
     // JS reponsive trên thiết bị di động:
-        $(".open-menu").click(function() {
-            $(this).hide();
-            $(".close-menu").show();
-            $(".menu").show();
-            $(".thong-ke").show();
-        });
-        $(".close-menu").click(function() {
-            $(this).hide();
-            $(".open-menu").show();
-            $(".menu").hide();
-            $(".thong-ke").hide();
-        });
-        // $(window).resize(function() {
-        //     $(".open-menu").hide();
-        //     $(".close-menu").hide();
-        //     $(".menu").show();
-        //     $(".thong-ke").show();
-        // })
+    $(".open-menu").click(function() {
+        $(this).hide();
+        $(".close-menu").show();
+        $(".menu").show();
+        $(".thong-ke").show();
+    });
+    $(".close-menu").click(function() {
+        $(this).hide();
+        $(".open-menu").show();
+        $(".menu").hide();
+        $(".thong-ke").hide();
+    });
 })
 
 
