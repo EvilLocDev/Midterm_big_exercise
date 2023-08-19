@@ -104,16 +104,19 @@ $(document).ready(() => {
         place.innerHTML = out;
     })
 
-    let viewTest = 0;
-    let totalClassView = $(".view");
-    let click = $(".short-content h3 a");
-    for(let i = 0; i < totalClassView.length; i++) {
-        $((click)[i]).click(function (){
-            viewTest++;
-            $(totalClassView[i]).html(`<i class="fa-regular fa-eye"></i> Đã xem: ` + viewTest);
-            console.log($(totalClassView)[i]);
-        })
-    }
+    // JS reponsive trên thiết bị di động:
+    $(".open-menu").click(function() {
+        $(this).hide();
+        $(".close-menu").show();
+        $(".menu").show();
+        $(".thong-ke").show();
+    });
+    $(".close-menu").click(function() {
+        $(this).hide();
+        $(".open-menu").show();
+        $(".menu").hide();
+        $(".thong-ke").hide();
+    });
 })
 
 

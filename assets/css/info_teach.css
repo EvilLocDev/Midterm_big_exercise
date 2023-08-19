@@ -16,7 +16,16 @@ section{
     display: flex;
 }
 
-.side-bar{
+.open-menu{
+    display: none;
+}
+
+.close-menu{
+    display: none;
+}
+
+
+.side-bar-info{
     width: 15%;
     background-color: #e5e5e5;
     position: relative;
