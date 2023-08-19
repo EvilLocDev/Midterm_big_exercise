@@ -21,8 +21,10 @@
           </a>
         </div>
         <div class="navbar-tool">
-          <a href="" class="tool--icon">
-            <i class="tool--icon--link fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="search-content">
+
+          <a class="tool--icon">
+            <i class="tool--icon--link fa-solid fa-magnifying-glass" id="search"></i>
           </a>
 
           <a href="" class="tool--icon">
@@ -76,43 +78,14 @@
         <!-- Thông tin -->
         <div class="grid__column-10">
           <div class="grid__row">
-            <div id="tour" class="grid__full-width tour-section--notis" id="general-notification">
+            <div id="tour" class="grid__full-width tour-section--notis">
               <div class="content-section">
-                  <h2 class="section-heading text-white">THÔNG TIN</h2>
-                  <p class="section-sub-heading text-white">Hãy nhớ kiểm tra thông báo nhé</p>
-                  
-                  <!--places-->
-                  <div class="places-list row grid__row">
-                      <div class="grid__column-10-3 place-item mt-16">
-                        
-                        <div class="place-img" style="background: url('https://nt.global.ssl.fastly.net/binaries/content/gallery/website/holidays/library/lake-district/great-langdale-campsite/great-langdale-campsite-aerial-view.jpg') center/cover no-repeat";></div>
-                        <div class="place-body">
-                            <h3 class="place-heading">Sắp dời trường qua cơ sở mới</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn js-buy-ticket s-full-width"><a href="./address.html">Xem thêm</a></button>
-                        </div>
-                        
-                      </div>
-                      <div class="grid__column-10-3 place-item mt-16">
-                        <div class="place-img" style="background: url('https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/wiltshire/places/great-chalfield-manor-and-garden/library/exterior-great-chalfield-manor-wiltshire-151327.jpg') center/cover no-repeat";></div>
-                        <div class="place-body">
-                            <h3 class="place-heading">Đổi cơ chế tính điểm ở học kì này cho học sinh</h3>
-                            <p class="place-time">Sat 28 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn js-buy-ticket s-full-width">Xem thêm</button>
-                        </div>
-                      </div>
-                      <div class="grid__column-10-3 place-item mt-16">
-                        <div class="place-img" style="background: url('https://www.greatwolf.com/cdn-cgi/image/fit=scale-down,width=1600/content/dam/greatwolf/sites/www/homepage-php/about-section/gwl-niagara-about-wp.jpg') center/cover no-repeat";></div>
-                        <div class="place-body">
-                            <h3 class="place-heading">Trường sẽ tăng cường học kì 3 cho học sinh</h3>
-                            <p class="place-time">Sun 29 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn js-buy-ticket s-full-width">Xem thêm</button>
-                        </div>
-                      </div>
-                  </div>
+                <h2 class="section-heading text-white">THÔNG TIN</h2>
+                <p class="section-sub-heading text-white">Hãy nhớ kiểm tra thông báo nhé</p>
+                
+                <!--places-->
+                <div class="places-list row grid__row" id="general-notification">
+                </div>
               </div>
             </div>
         
@@ -317,5 +290,7 @@
         event.stopPropagation();
       });
   </script>
+
+  <script src="/javascript/notification.js"></script>
 </body>
 </html>
