@@ -7,8 +7,16 @@
 
     .side-bar-info{
         display: block;
-        width: 100%;
-        margin: 0;
+        position: fixed;
+        z-index: 3;
+        border: none;
+        width: 95%;
+    
+    }
+
+    .content-side-bar{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .open-menu{
@@ -36,13 +44,15 @@
     .close-menu > button{
         width: 30px;
         height: 30px;
-        margin-top: 0.5rem;
     }
 
     .menu{
         display: none;
         background-color: #435c8c;
-        position: fixed;
+        position: relative;
+        border-right: 1px black solid;
+        
+
     }
 
     .menu > li{

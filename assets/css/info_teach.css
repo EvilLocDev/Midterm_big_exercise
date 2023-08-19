@@ -46,8 +46,7 @@ section{
 }
 
 .menu {
-    
-    position: relative;
+    position: inherit;
 }
 
 .menu > li{
