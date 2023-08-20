@@ -26,6 +26,7 @@ section{
 
 
 .side-bar-info{
+    display: block;
     width: 15%;
     background-color: #e5e5e5;
     position: relative;

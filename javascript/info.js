@@ -201,9 +201,7 @@ $(document).ready(() => {
     })
 
     // JS reponsive trên thiết bị di động:
-    $(".side-bar-info").hide();
     $(".open-menu").click(function() {
-        
         $(".side-bar-info").removeClass("remove-menu");
         $(".side-bar-info").addClass("move-menu");
         $(".side-bar-info").show();
@@ -220,8 +218,11 @@ $(document).ready(() => {
         $(".open-menu").show(500);
         $(".close-menu").addClass("move-button");
         $(".close-menu").hide(500);
-        
     });
+
+    $(windown).resize(function() {
+        $(".side-bar-info").addClass("block");
+    })
 
 
 })

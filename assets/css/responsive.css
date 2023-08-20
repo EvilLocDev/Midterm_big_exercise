@@ -3,7 +3,9 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
 /* PC 1024px */
 @media (min-width: 1024px) {
-    
+    .side-bar-info{
+        display: block !important;
+    }
 }
 
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
@@ -28,11 +30,9 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     @keyframes remove-menu {
         from {
             margin-left: 0px;
-            display: block;
         }
         to {
             margin-left: -559px;
-            display: none;
         }
     }
 
@@ -111,7 +111,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
 
     .side-bar-info{
-        display: block;
+        display: none;
         position: fixed;
         z-index: 3;
         border: none;
@@ -125,7 +125,8 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .open-menu{
         display: block;
         position: fixed;
-        z-index: 50;
+        z-index: 3;
+        left: 0;
 
     }
 
@@ -226,6 +227,16 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .sub-info > .flex > p {
         display: block;
         margin: 0;
+    }
+
+    /* CSS TKB */
+    #thoi-khoa-bieu h2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #thoi-khoa-bieu .flex{
+        display: block;
     }
 
     /* Footer */
@@ -359,6 +370,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 90%;
         margin: 5px auto;
     }
+
 }
 
 /* Tablet */
@@ -372,6 +384,9 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     
 
     /* ==== Page info ==== */
+    .side-bar-info{
+        display: block !important;
+    }
     .page-info{
         display: flex;
     }

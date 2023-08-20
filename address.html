@@ -134,7 +134,47 @@
             <p class="copyright">© 2015 - Bản quyền thuộc về Công ty ST channel</p>
         </footer>
         <!-- Kết thúc Footer -->
+        
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var tabletMenu = document.getElementById('tablet-menu');    
+        var headerHeight = header.clientHeight;
+    
+        //Đóng/mở tablet menu
+        tabletMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+    
+            if (isClosed) {
+                header.style.height = '100%';
+            } else {
+                header.style.height = null;
+            }
+        }
+        // Trong đoạn code trên, clientHeight là một thuộc tính của DOM (Document Object Model) được sử dụng để lấy chiều cao hiển thị của một phần tử trong trình duyệt web. Nó đo lường chiều cao của phần nội dung của phần tử, bao gồm cả nội dung thực tế và khoảng cách đệm, nhưng không bao gồm các biên (margin), phần border, và thanh cuộn (scrollbar).
+    
+        // Trong đoạn code của bạn, header là một phần tử DOM có id là "header". header.clientHeight được sử dụng để lấy chiều cao hiển thị của phần tử "header" ban đầu khi trang web được tải lần đầu.
+    
+        // Đoạn mã còn lại của bạn liên quan đến việc đóng/mở menu di động khi người dùng nhấp vào phần tử có id là "mobile-menu". Khi người dùng nhấp vào "mobile-menu", đoạn mã kiểm tra nếu chiều cao hiển thị của "header" hiện tại bằng với headerHeight (chiều cao ban đầu của "header"), điều này ngụ ý rằng menu đang đóng. Trong trường hợp này, nó sẽ thay đổi chiều cao của "header" thành 'auto', tức là cho phép nó mở rộng tự động để hiển thị nội dung.
+    
+        // Nếu chiều cao hiển thị của "header" không bằng headerHeight, điều này ngụ ý rằng menu đang mở. Trong trường hợp này, nó sẽ đặt chiều cao của "header" thành null, có nghĩa là bỏ bất kỳ chiều cao cố định nào, để phần tử "header" thu nhỏ lại như ban đầu.
+    
+        // Như vậy, đoạn mã này cho phép bạn đóng và mở menu di động bằng cách thay đổi chiều cao của phần tử "header" dựa trên việc so sánh chiều cao hiển thị hiện tại với chiều cao ban đầu của nó.
+    
+        var club = document.getElementById('tablet-club-category');
+        var tabletClub = document.getElementById('tablet-club-category__heading');
+        var clubHeight = club.clientHeight;
+    
+        tabletClub.onclick = function() {
+          var isClosed = club.clientHeight === clubHeight;
+    
+          if(isClosed) {
+            club.style.height = '100%';
+          } else {
+            club.style.height = null;
+          }
+        }
+      </script>
 </body>
 </html>
    
