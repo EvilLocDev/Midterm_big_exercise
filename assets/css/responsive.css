@@ -152,8 +152,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         margin-right: 0px;
     }
 
-    
-
     .menu{
         display: block;
         background-color: #435c8c;
@@ -238,6 +236,13 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
 
     #thoi-khoa-bieu .flex{
+        display: block;
+    }
+
+    .anh-to-van > div{
+        width: 100%;
+        height: 200px;
+        text-align: center;
         display: block;
     }
 
