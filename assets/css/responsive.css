@@ -119,7 +119,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         margin-top: 0;
         margin-left: 0.5%;
         margin-left: 0px;
-
+        box-shadow: 3px 5px 9px rgb(39, 38, 38);
     }
 
     .open-menu{
@@ -134,7 +134,8 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 30px;
         height: 30px;
         margin-top: 0px;
-        margin-left: -10px;
+        margin-left: 5px;
+        box-shadow: 3px 3px 3px rgb(77, 72, 72);
     }
 
     .close-menu{
@@ -148,7 +149,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .close-menu > button{
         width: 30px;
         height: 30px;
-        margin-right: 8px;
+        margin-right: 0px;
     }
 
     
