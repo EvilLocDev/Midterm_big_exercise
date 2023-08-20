@@ -11,7 +11,7 @@ $(document).ready(() => {
     $(".main-content > div:not(#main)").hide();
     $(".menu a").click(function() {
         // click mở tab
-        $(this).parent().removeClass("color-click");
+        $(".menu a  ").parent().removeClass("color-click");
         $(this).parent().addClass("color-click");
          // click mở nội dung tương ứng
         $(".main-content > div").hide();
@@ -20,7 +20,6 @@ $(document).ready(() => {
 
     let windowSize = $(window).resize().width();
     if(windowSize < 740) {
-        $(".open-menu").addClass("block");
         //CLICK TKB
         $(".click-menu > li:first-child > a").click(function() {
             $(".side-bar-info").addClass("remove-menu");
@@ -43,20 +42,7 @@ $(document).ready(() => {
         });
     }
     else {
-        $(".open-menu").addClass("none");
         $("page-info").addClass("block");
-        //ẩn nội dung sub-content
-        $(".main-content > div:not(#main)").hide();
-        $(".menu a").click(function() {
-            $(".open-menu").hide();
-            // click mở tab
-            $(".menu a").parent().removeClass("color-click");
-            $(this).parent().addClass("color-click");
-            // click mở nội dung tương ứng
-            $(".main-content > div").hide();
-            $($(this).attr("href")).show();
-            $(".menu a").not($(this)).parent().removeClass("color-click");
-        });
     }
     // Đọc dữ liệu từ file JSON
     // ===== CHUYÊN MÔN =====
