@@ -224,9 +224,7 @@ $(document).ready(() => {
         $(".side-bar-info").addClass("block");
     })
 
-
+    $("click-menu > li:first-child > a").click(function() {
+        alert("hello");
+    })
 })
-
-
-
-
