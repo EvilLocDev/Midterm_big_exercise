@@ -20,13 +20,18 @@ $(document).ready(() => {
 
     let windowSize = $(window).resize().width();
     if(windowSize < 740) {
+        $(".open-menu").click(function() {
+            $(".side-bar-info").removeClass("remove-menu");
+            $(".side-bar-info").addClass("move-menu");
+            $(".side-bar-info").show();
+            $(".open-menu").hide();
+        });
         //CLICK TKB
         $(".click-menu > li:first-child > a").click(function() {
             $(".side-bar-info").addClass("remove-menu");
             $(".side-bar-info").hide(600);
             $(".open-menu").show(500);
         })
-
         // CLICK SUB_MENU
         $(".click-sub-menu").click(function() {
             $(".side-bar-info").addClass("remove-menu");
@@ -34,12 +39,7 @@ $(document).ready(() => {
             $(".open-menu").show(500);
         })
         // JS reponsive trên thiết bị di động:
-        $(".open-menu").click(function() {
-            $(".side-bar-info").removeClass("remove-menu");
-            $(".side-bar-info").addClass("move-menu");
-            $(".side-bar-info").show();
-            $(".open-menu").hide();
-        });
+       
     }
     else {
         $("page-info").addClass("block");
