@@ -1,5 +1,6 @@
 /* PC: > 1024px Tablet&Mobile: < 1024px 
 Tablet: 740px -> 1023 Mobile: < 740px*/
+
 /* PC 1024px */
 @media (min-width: 1024px) {
     
@@ -267,6 +268,75 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
 /*Tablet & Mobile*//*1023px*/
 @media (max-width: 1023px) {
+    .grid__column-10 {
+        position: relative;
+        width: 100%;
+    }
+
+    .grid__column-2 {
+        width: 30%;
+        position: fixed;
+        top: 320px;
+        right: 20px;
+        box-shadow: 2px 5px 5px #333;
+        padding: 0;
+        /* display: none; */
+    }
+    
+    .club-category {
+        height: 44px;
+        overflow: hidden;
+    }
+}
+
+/* Trường hợp đặt biệt vì xung đột giữa logo và navigation */
+@media (max-width: 1240px) {
+    .navbar-logo {
+        display: none;
+    }
+
+    .tablet-menu {
+        display: block;
+        margin-right: 16px;
+        z-index: 1;
+    }
+
+    #header {
+        bottom: calc(100% - 106px);
+        overflow: hidden;
+    }
+
+    .tablet-navbar-logo-img {
+        height: 71px;
+        border-bottom: 4px solid #D61E33;
+    }
+    
+    .navbar-list {
+        display: block;
+    }
+
+    .tablet-navbar-list__item-link {
+        margin-left: 16px;
+        padding: 0 !important;
+    }
+    
+    .navbar-list > li > a {
+        margin-left: 16px;
+    }
+
+    .navbar-list > li:nth-last-child(1)> a::after {
+        display: none;
+    }
+
+    .tablet-list__item {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* header */
+
     /* map */
     .flex {
         display: block;
