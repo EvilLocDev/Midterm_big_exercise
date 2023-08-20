@@ -9,6 +9,44 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
 /*Mobile*//*739px*/
 @media (max-width: 739px) {
+
+    /* map */
+    .flex {
+        display: block;
+        margin: 0;
+    }
+
+    .position {
+        padding: 5px 0;
+    }
+
+    h1.header-map{
+        font-size: 1.2rem;
+    }
+
+    .map > div:first-child{
+        padding: 0.5rem;
+    }
+
+    h2.header-map {
+        width: 90%;
+        border-radius: 0%;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    .sub-address > h3{
+        font-size: 0.8rem;
+    }
+
+    .address > div {
+        width: 90%;
+        margin: 5px auto;
+    }
+
     /* sidebar trang info trường */
     .page-info{
         display: block;
@@ -20,39 +58,37 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         z-index: 3;
         border: none;
         width: 95%;
-    
-    }
+        margin-top: 0;
+        margin-left: 0.5%;
 
-    .content-side-bar{
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .open-menu{
         display: block;
         position: fixed;
-        z-index: 2;
+        z-index: 50;
 
     }
 
     .open-menu > button{
         width: 30px;
         height: 30px;
-        transform: translateX(9px);
-        margin-top: 10px;
+        margin-top: 0px;
+        margin-left: -10px;
     }
 
     .close-menu{
         display: none; 
         position: fixed;
         float: right;
-        z-index: 2;
+        z-index: 50;
         right: 0;
     }
 
     .close-menu > button{
         width: 30px;
         height: 30px;
+        margin-right: 8px;
     }
 
     .menu{
@@ -80,7 +116,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     .main-content{
         width: 95%;
-        margin-top: 45px;
+        margin-top: 4px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0.3rem;
@@ -94,10 +130,84 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         padding-right: 0;
     }
 
+    .main-content h1{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    /* CSS MỤC CHUYÊN MÔN CUỘC THI,..*/
+    .box{
+        margin-top: 0.3rem;
+        display: flex !important;
+    }
+
+    .box .sub-picture {
+        padding: 0.3rem 0 0 0.3rem;
+        width: 35%;
+    }
+
+    .box .sub-picture > img{
+        height: auto;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .short-content h3{
+        font-size: 0.8rem;
+    }
+
+    .sub-info > .flex{
+        display: block;
+    }
+
+    .sub-info > .flex > p {
+        display: block;
+        margin: 0;
+    }
+
+    /* Footer */
+    footer{
+        width: 100%;
+    }
+
+    .footer__content{
+        display: block; 
+    }
+
+    .footer__adress-heading{
+        margin-left: 1rem;
+    }
+
+    div.footer__content::after{
+        display: none;
+    }
+
+    .footer__adress-description{
+        margin-left: 1.5rem;
+    }
+
+    .copyright{
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
+    footer h2{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+    
+
 }
 
 /*Tablet & Mobile*//*1023px*/
 @media (max-width: 1023px) {
+<<<<<<< HEAD
 
 }
 
@@ -149,6 +259,8 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 @media (min-width: 740px) and (max-width: 1023px) {
     /* header */
 
+=======
+>>>>>>> 51bc2cc44bd209e35c6b075f7985eaa8a5ec2604
     /* map */
     .flex {
         display: block;
@@ -171,10 +283,38 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 90%;
         margin: 5px auto;
     }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* header */
+    header{
+        position: relative;
+        
+    }
+
+    
 
     /* ==== Page info ==== */
+    .page-info{
+        display: flex;
+    }
+    
+    .page-info .side-bar-info{
+        width: 40%;
+    }
 
- 
+    .box{
+        display: flex;
+    }
+
+    .box .sub-picture > img {
+        height: auto;
+    }
+
+    .short-content .sub-info .flex{
+        display: flex;
+    }
 
      /* Footer */
     footer{
@@ -200,8 +340,3 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 }
 
 /* Mobile */
-@media screen and (max-width: 739px) {
-    .footer__content{
-        display: block; 
-    }
-}

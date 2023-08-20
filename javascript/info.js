@@ -59,7 +59,7 @@ $(document).ready(() => {
                             <p><i class="fa-regular fa-comment"></i> Phản hồi: ${inform.comment}</p>
                         </div>
                         <div>
-                            <p>Đối tượng tham gia: ${inform.member}}</p>
+                            <p>Đối tượng tham gia: ${inform.member}</p>
                         </div>
                     </div>
                 </div>
@@ -103,26 +103,116 @@ $(document).ready(() => {
         }
         place.innerHTML = out;
     })
+    // VĂN BẢN BIỂU MẪU
+    // === CẤP TRƯỜNG ===
+    fetch("./json/van-ban-cap-truong.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(texts) {
+        let place = document.querySelector("#cap-truong");
+        let out = "";
+        for (let text of texts) {
+            out += `
+            <div class="flex box">
+                <div class="sub-picture">
+                    <img src="${text.image}" alt="${text.name}">
+                </div>
+                <div class="short-content">
+                    <h3>
+                        <a href="${text.link}">${text.name}</a>
+                    </h3>
+                    <div class="sub-info">
+                        <div class="flex ">
+                            <p> <i class="fa-regular fa-clock"></i> ${text.time}</p>
+                            <p class="view"><i class="fa-regular fa-eye"></i> Đã xem: ${text.view} </p>
+                            <p><i class="fa-regular fa-comment"></i> Phản hồi: ${text.comment}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+        place.innerHTML = out;
+    })
+
+    // === CẤP SỞ ===
+    fetch("./json/van-ban-cap-so.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(texts) {
+        let place = document.querySelector("#cap-so");
+        let out = "";
+        for (let text of texts) {
+            out += `
+            <div class="flex box">
+                <div class="sub-picture" style="width: 30%">
+                    <img src="${text.image}" alt="${text.name}">
+                </div>
+                <div class="short-content">
+                    <h3>
+                        <a href="${text.link}">${text.name}</a>
+                    </h3>
+                    <div class="sub-info">
+                        <div class="flex ">
+                            <p> <i class="fa-regular fa-clock"></i> ${text.time}</p>
+                            <p class="view"><i class="fa-regular fa-eye"></i> Đã xem: ${text.view} </p>
+                            <p><i class="fa-regular fa-comment"></i> Phản hồi: ${text.comment}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+        place.innerHTML = out;
+    })
+    
+    // === CẤP BỘ ===
+    fetch("./json/van-ban-cap-bo.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(texts) {
+        let place = document.querySelector("#cap-bo");
+        let out = "";
+        for (let text of texts) {
+            out += `
+            <div class="flex box">
+                <div class="sub-picture" style="width: 30%">
+                    <img style="height: auto" src="${text.image}" alt="${text.name}">
+                </div>
+                <div class="short-content">
+                    <h3>
+                        <a href="${text.link}">${text.name}</a>
+                    </h3>
+                    <div class="sub-info">
+                        <div class="flex ">
+                            <p> <i class="fa-regular fa-clock"></i> ${text.time}</p>
+                            <p class="view"><i class="fa-regular fa-eye"></i> Đã xem: ${text.view} </p>
+                            <p><i class="fa-regular fa-comment"></i> Phản hồi: ${text.comment}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+        place.innerHTML = out;
+    })
 
     // JS reponsive trên thiết bị di động:
-        $(".open-menu").click(function() {
-            $(this).hide();
-            $(".close-menu").show();
-            $(".menu").show();
-            $(".thong-ke").show();
-        });
-        $(".close-menu").click(function() {
-            $(this).hide();
-            $(".open-menu").show();
-            $(".menu").hide();
-            $(".thong-ke").hide();
-        });
-        // $(window).resize(function() {
-        //     $(".open-menu").hide();
-        //     $(".close-menu").hide();
-        //     $(".menu").show();
-        //     $(".thong-ke").show();
-        // })
+    $(".open-menu").click(function() {
+        $(".menu").show();
+        $(".thong-ke").show();
+        $(".close-menu").show();
+        $(".open-menu").hide();
+    });
+    $(".close-menu").click(function() {
+        $(".menu").hide();
+        $(".thong-ke").hide();
+        $(".close-menu").hide();
+        $(".open-menu").show();
+    });
 })
 
 
