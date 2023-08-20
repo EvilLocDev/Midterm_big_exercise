@@ -181,8 +181,8 @@
         </div>
 
         <div class="grid__column-2">
-          <nav class="club-category">
-            <h3 class="club-category__heading">
+          <nav class="club-category" id="tablet-club-category">
+            <h3 class="club-category__heading" id="tablet-club-category__heading">
               <i class="club-category__heading-icon fa-solid fa-bars"></i>Các câu lạc bộ
             </h3>
             <ul class="club-category__list">
@@ -324,6 +324,20 @@
     // Nếu chiều cao hiển thị của "header" không bằng headerHeight, điều này ngụ ý rằng menu đang mở. Trong trường hợp này, nó sẽ đặt chiều cao của "header" thành null, có nghĩa là bỏ bất kỳ chiều cao cố định nào, để phần tử "header" thu nhỏ lại như ban đầu.
 
     // Như vậy, đoạn mã này cho phép bạn đóng và mở menu di động bằng cách thay đổi chiều cao của phần tử "header" dựa trên việc so sánh chiều cao hiển thị hiện tại với chiều cao ban đầu của nó.
+
+    var club = document.getElementById('tablet-club-category');
+    var tabletClub = document.getElementById('tablet-club-category__heading');
+    var clubHeight = club.clientHeight;
+
+    tabletClub.onclick = function() {
+      var isClosed = club.clientHeight === clubHeight;
+
+      if(isClosed) {
+        club.style.height = '100%';
+      } else {
+        club.style.height = null;
+      }
+    }
   </script>
 </body>
 </html>

@@ -14,12 +14,7 @@
 
 /* Grid */
 .grid {
-<<<<<<< HEAD
-  /* max-width: 1000px; */
-=======
   width: 100%;
->>>>>>> 51bc2cc44bd209e35c6b075f7985eaa8a5ec2604
-  max-width: 100%;
   margin: 0 auto;
 }
 

@@ -207,8 +207,25 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
 /*Tablet & Mobile*//*1023px*/
 @media (max-width: 1023px) {
-<<<<<<< HEAD
+    .grid__column-10 {
+        position: relative;
+        width: 100%;
+    }
 
+    .grid__column-2 {
+        width: 30%;
+        position: fixed;
+        top: 320px;
+        right: 20px;
+        box-shadow: 2px 5px 5px #333;
+        padding: 0;
+        /* display: none; */
+    }
+    
+    .club-category {
+        height: 44px;
+        overflow: hidden;
+    }
 }
 
 /* Trường hợp đặt biệt vì xung đột giữa logo và navigation */
@@ -259,8 +276,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 @media (min-width: 740px) and (max-width: 1023px) {
     /* header */
 
-=======
->>>>>>> 51bc2cc44bd209e35c6b075f7985eaa8a5ec2604
     /* map */
     .flex {
         display: block;
