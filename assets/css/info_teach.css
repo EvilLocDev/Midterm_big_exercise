@@ -272,6 +272,7 @@ ul.list-member{
 
 .sub-info div:first-child{
     margin-top: 0;
+    justify-content: space-between;
 }
 
 .flex > p:first-child{

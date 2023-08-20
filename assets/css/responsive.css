@@ -58,17 +58,12 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         border: none;
         width: 95%;
         margin-top: 0;
-        margin-left: 10px;
-    }
-
-    .content-side-bar{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0.5%;
 
     }
 
     .open-menu{
-        display: block !important;
+        display: block;
         position: fixed;
         z-index: 50;
 
@@ -78,7 +73,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 30px;
         height: 30px;
         margin-top: 0px;
-        margin-left: -25px;
+        margin-left: -10px;
     }
 
     .close-menu{
@@ -139,9 +134,45 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         font-size: 1.2rem;
     }
 
+    /* CSS MỤC CHUYÊN MÔN CUỘC THI,..*/
+    .box{
+        margin-top: 0.3rem;
+        display: flex !important;
+    }
+
+    .box .sub-picture {
+        padding: 0.3rem 0 0 0.3rem;
+        width: 35%;
+    }
+
+    .box .sub-picture > img{
+        height: auto;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .short-content h3{
+        font-size: 0.8rem;
+    }
+
+    .sub-info > .flex{
+        display: block;
+    }
+
+    .sub-info > .flex > p {
+        display: block;
+        margin: 0;
+    }
+
     /* Footer */
     footer{
         width: 100%;
+    }
+
+    .footer__content{
+        display: block; 
     }
 
     .footer__adress-heading{
@@ -169,22 +200,12 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         font-size: 0.8rem;
         line-height: 2;
     }
+    
 
 }
 
 /*Tablet & Mobile*//*1023px*/
 @media (max-width: 1023px) {
-
-}
-
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
-    /* header */
-    header{
-        position: relative;
-        
-    }
-
     /* map */
     .flex {
         display: block;
@@ -207,10 +228,38 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 90%;
         margin: 5px auto;
     }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* header */
+    header{
+        position: relative;
+        
+    }
+
+    
 
     /* ==== Page info ==== */
+    .page-info{
+        display: flex;
+    }
+    
+    .page-info .side-bar-info{
+        width: 40%;
+    }
 
- 
+    .box{
+        display: flex;
+    }
+
+    .box .sub-picture > img {
+        height: auto;
+    }
+
+    .short-content .sub-info .flex{
+        display: flex;
+    }
 
      /* Footer */
     footer{
@@ -236,8 +285,3 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 }
 
 /* Mobile */
-@media screen and (max-width: 739px) {
-    .footer__content{
-        display: block; 
-    }
-}

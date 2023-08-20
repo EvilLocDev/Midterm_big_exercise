@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Cuoc thi",
-        "image": "./assets/img/thong-bao.jpg",
+        "name": "Kế hoạch giảng dạy tháng 6 năm học 2023",
+        "image": "./assets/img/ke-hoach.jpg",
         "link": "#",
         "time": "05/05/2023 14:30:00 PM",
         "view": 0,
@@ -11,7 +11,7 @@
     },
     {
         "id":2,
-        "name": "Cuoc thi",
+        "name": "Thông báo kết quả cuộc thi tìm hiều luật ATGT",
         "image": "./assets/img/thong-bao.jpg",
         "link": "#",
         "time": "05/05/2023 14:30:00 PM",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "name": "Cuoc thi",
+        "name": "Kế hoạch ôn thi HSG năm học 2023 ",
         "image": "./assets/img/ke-hoach.jpg",
         "link": "#",
         "time": "05/05/2023 14:30:00 PM",
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "name": "Cuoc thi",
+        "name": "Thông báo lịch đăng kí học nghề bổ sung",
         "image": "./assets/img/thong-bao.jpg",
         "link": "#",
         "time": "05/05/2023 14:30:00 PM",
