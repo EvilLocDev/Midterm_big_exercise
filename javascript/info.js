@@ -147,7 +147,7 @@ $(document).ready(() => {
         for (let text of texts) {
             out += `
             <div class="flex box">
-                <div class="sub-picture" style="width: 30%">
+                <div class="sub-picture">
                     <img src="${text.image}" alt="${text.name}">
                 </div>
                 <div class="short-content">
@@ -179,8 +179,8 @@ $(document).ready(() => {
         for (let text of texts) {
             out += `
             <div class="flex box">
-                <div class="sub-picture" style="width: 30%">
-                    <img style="height: auto" src="${text.image}" alt="${text.name}">
+                <div class="sub-picture">
+                    <img src="${text.image}" alt="${text.name}">
                 </div>
                 <div class="short-content">
                     <h3>
@@ -201,18 +201,29 @@ $(document).ready(() => {
     })
 
     // JS reponsive trên thiết bị di động:
+    $(".side-bar-info").hide();
     $(".open-menu").click(function() {
-        $(".menu").show();
-        $(".thong-ke").show();
+        
+        $(".side-bar-info").removeClass("remove-menu");
+        $(".side-bar-info").addClass("move-menu");
+        $(".side-bar-info").show();
+        $(".close-menu").addClass("move-button");
         $(".close-menu").show();
         $(".open-menu").hide();
     });
     $(".close-menu").click(function() {
-        $(".menu").hide();
-        $(".thong-ke").hide();
-        $(".close-menu").hide();
-        $(".open-menu").show();
+        $(".side-bar-info").addClass("remove-menu");
+        $(".side-bar-info").hide(600);
+        $(".close-menu").addClass("remove-button");
+        $(".close-menu").removeClass("remove-button");
+        $(".close-menu").hide(500);
+        $(".open-menu").show(500);
+        $(".close-menu").addClass("move-button");
+        $(".close-menu").hide(500);
+        
     });
+
+
 })
 
 
