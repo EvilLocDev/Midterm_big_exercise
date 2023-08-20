@@ -16,16 +16,8 @@ section{
     display: flex;
 }
 
-.open-menu{
-    display: none;
-}
-
-.close-menu{
-    display: none;
-}
-
-
 .side-bar-info{
+    display: block;
     width: 15%;
     background-color: #e5e5e5;
     position: relative;
@@ -214,19 +206,19 @@ ul.list-member{
 }
 
 .anh-to-van > div{
-    width: 100%;
+    width: 33%;
+    height: 200px;
     text-align: center;
-
+    display: inline-block;
 }
 
 .anh-to-van > div > p{
     text-align: center;
-
 }
 
 .anh-to-van > div > img{
     display: inline-block;
-    width: 50%
+    width: 50%;
     /* padding: 0.5rem 0.5rem 0 0.5rem; */
 }
 
@@ -239,7 +231,7 @@ ul.list-member{
 }
 
 .box .sub-picture{
-    width:15%;
+    width:10%;
     padding: 0.3rem;
 }
 

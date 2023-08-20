@@ -3,7 +3,7 @@
         "id": 1,
         "image": "./assets/img/bo-GD-DT.jpg",
         "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2023",
-        "time": "22/10/2017",
+        "time": "22/10/2023",
         "view": 110,
         "comment": 0
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "image": "./assets/img/bo-GD-DT.jpg",
         "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2022",
-        "time": "22/10/2017",
+        "time": "22/10/2022",
         "view": 110,
         "comment": 0
     },
@@ -19,15 +19,15 @@
         "id": 3,
         "image": "./assets/img/bo-GD-DT.jpg",
         "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2021",
-        "time": "22/10/2017",
+        "time": "22/10/2021",
         "view": 110,
         "comment": 0
     },
     {
         "id": 4,
         "image": "./assets/img/bo-GD-DT.jpg",
-        "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2010",
-        "time": "22/10/2017",
+        "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2020",
+        "time": "22/10/2020",
         "view": 110,
         "comment": 0
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "image": "./assets/img/bo-GD-DT.jpg",
         "name": "Công văn số 4818 V/v tổ chức Kỳ thi THPT QG và tuyển sinh ĐH, CĐ  2019",
-        "time": "22/10/2017",
+        "time": "22/10/2019",
         "view": 110,
         "comment": 0
     }

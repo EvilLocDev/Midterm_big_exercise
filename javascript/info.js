@@ -7,32 +7,43 @@ $(document).ready(() => {
             subMenu[i].classList.toggle('block');
         })
     };
-
     // ẩn hiện nội dung thời khóa biểu
     $(".main-content > div:not(#main)").hide();
     $(".menu a").click(function() {
         // click mở tab
-        $(this).parent().removeClass("color-click");
+        $(".menu a  ").parent().removeClass("color-click");
         $(this).parent().addClass("color-click");
          // click mở nội dung tương ứng
         $(".main-content > div").hide();
         $($(this).attr("href")).show();
-        
     });
 
-    //ẩn nội dung sub-content
-    $(".main-content > div:not(#main)").hide();
-    $(".menu a").click(function() {
-        // click mở tab
-        $(".menu a").parent().removeClass("color-click");
-        $(this).parent().addClass("color-click");
-        // click mở nội dung tương ứng
-        $(".main-content > div").hide();
-        $($(this).attr("href")).show();
-        $(".menu a").not($(this)).parent().removeClass("color-click");
-        
-    });
-    
+    let windowSize = $(window).resize().width();
+    if(windowSize < 740) {
+        $(".open-menu").click(function() {
+            $(".side-bar-info").removeClass("remove-menu");
+            $(".side-bar-info").addClass("move-menu");
+            $(".side-bar-info").show();
+            $(".open-menu").hide();
+        });
+        //CLICK TKB
+        $(".click-menu > li:first-child > a").click(function() {
+            $(".side-bar-info").addClass("remove-menu");
+            $(".side-bar-info").hide(600);
+            $(".open-menu").show(500);
+        })
+        // CLICK SUB_MENU
+        $(".click-sub-menu").click(function() {
+            $(".side-bar-info").addClass("remove-menu");
+            $(".side-bar-info").hide(600);
+            $(".open-menu").show(500);
+        })
+        // JS reponsive trên thiết bị di động:
+       
+    }
+    else {
+        $("page-info").addClass("block");
+    }
     // Đọc dữ liệu từ file JSON
     // ===== CHUYÊN MÔN =====
     fetch("./json/chuyen-mon.json")
@@ -147,7 +158,7 @@ $(document).ready(() => {
         for (let text of texts) {
             out += `
             <div class="flex box">
-                <div class="sub-picture" style="width: 30%">
+                <div class="sub-picture">
                     <img src="${text.image}" alt="${text.name}">
                 </div>
                 <div class="short-content">
@@ -179,8 +190,8 @@ $(document).ready(() => {
         for (let text of texts) {
             out += `
             <div class="flex box">
-                <div class="sub-picture" style="width: 30%">
-                    <img style="height: auto" src="${text.image}" alt="${text.name}">
+                <div class="sub-picture">
+                    <img src="${text.image}" alt="${text.name}">
                 </div>
                 <div class="short-content">
                     <h3>
@@ -199,22 +210,4 @@ $(document).ready(() => {
         }
         place.innerHTML = out;
     })
-
-    // JS reponsive trên thiết bị di động:
-    $(".open-menu").click(function() {
-        $(".menu").show();
-        $(".thong-ke").show();
-        $(".close-menu").show();
-        $(".open-menu").hide();
-    });
-    $(".close-menu").click(function() {
-        $(".menu").hide();
-        $(".thong-ke").hide();
-        $(".close-menu").hide();
-        $(".open-menu").show();
-    });
 })
-
-
-
-

@@ -16,55 +16,61 @@
 <body>
     <div class="school">
         <!-- Header -->
-        <header class="school_header">
-            <!-- Navbar -->
-            <div class="grid">
-            <nav class="header-navbar">
-                <div class="navbar-logo">
-                <a href="" class="navbar-logo-link">
-                    <img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt="" class="navbar-logo-img">
+    <header class="school_header" id="header">
+        <!-- Navbar -->
+        <nav class="header-navbar">
+          <div class="navbar-logo">
+            <a href="" class="navbar-logo-link">
+              <img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt="" class="navbar-logo-img">
+            </a>
+          </div>
+          <div class="navbar-tool">
+            <input type="text" class="tool--search-content" name="search-content" placeholder="Tìm kiếm">
+  
+            <a class="tool--icon">
+              <i class="tool--icon--link fa-solid fa-magnifying-glass" id="search"></i>
+            </a>
+          </div>
+          <div class="container-navbar-list">
+            <ul class="navbar-list">
+              <!-- Tablet menu button -->
+              <li class="tablet-menu">
+                <a class="tablet-menu__item-link" id="tablet-menu">
+                  <i class="fa-solid fa-bars"></i>
                 </a>
-                </div>
-                <div class="navbar-tool">
-                <a href="" class="tool--icon">
-                    <i class="tool--icon--link fa-solid fa-magnifying-glass"></i>
-                </a>
-
-                <a href="" class="tool--icon">
-                    <i class="tool--icon--link fa-solid fa-bars"></i>
-                </a>
-                </div>
-                <div class="container-navbar-list">
-                    <ul class="navbar-list">
-                        <li class="navbar-list__item">
-                          <a href="./index.html" class="navbar-list__item-link">Trang chủ</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="./info_teach.html" class="navbar-list__item-link">Giới thiệu</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="./address.html" class="navbar-list__item-link">Cơ sở giáo dục</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="" class="navbar-list__item-link">Thông tin</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="" class="navbar-list__item-link">Chuyên môn</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="" class="navbar-list__item-link">Đoàn thể</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="" class="navbar-list__item-link">Biểu mẫu</a>
-                        </li>
-                        <li class="navbar-list__item">
-                          <a href="" class="navbar-list__item-link">Liên kết</a>
-                        </li>
-                      </ul>
-                </div>
-            </nav>
-            </div>
-        </header>
+              </li>
+              <li class="navbar-list__item tablet-list__item">
+                <a disabled="disabled" class="tablet-navbar-list__item-link"><img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt=""class="tablet-navbar-logo-img"></a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./index.html" class="navbar-list__item-link">Trang chủ</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./info_teach.html" class="navbar-list__item-link">Giới thiệu</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./address.html" class="navbar-list__item-link">Cơ sở giáo dục</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Thông tin</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Chuyên môn</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Đoàn thể</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Biểu mẫu</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Liên kết</a>
+              </li>
+            
+            </ul>
+          </div>
+        </nav>
+      </header>
         <!-- Kể thúc Navbar -->
 
         <!-- Slider -->
@@ -78,23 +84,22 @@
 
         <!-- Giới thiệu trường -->
         <section class="flex page-info"> 
+            <div class="open-menu"><button><i class="fa-solid fa-bars"></i></button></div>  
             <div class="side-bar-info">
                 <div class="content-side-bar">
                     <div >
-                        <div class="open-menu"><button><i class="fa-solid fa-bars"></i></button></div>
-                        <div class="close-menu"><button><i class="fa-solid fa-angles-down fa-rotate-90"></i></button></div>
-                        <ul class="menu">
+                        <ul class="menu click-menu">
                             <li><a href="#thoi-khoa-bieu">thời khóa biểu</a></li>
                             <li>
                                 <span>các kế hoạch <i class="fa-solid fa-caret-down"></i></span>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu click-sub-menu">
                                     <li><a href="#chuyen-mon">chuyên môn</a></li>
                                     <li><a href="#cuoc-thi">cuộc thi </a></li>
                                 </ul>
                             </li>
                             <li>
                                 <span>văn bản biểu mẫu <i class="fa-solid fa-caret-down"></i></span>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu click-sub-menu">
                                     <li><a href="#cap-truong">cấp trường</a></li>
                                     <li><a href="#cap-so">cấp sở <i class="fa-solid fa-caret-down fa-rotate-270" style="color: #ffffff;"></i></a></li>
                                     <li><a href="#cap-bo">cấp bộ<i class="fa-solid fa-caret-down fa-rotate-270" style="color: #ffffff;"></i></a></li>
@@ -102,7 +107,7 @@
                             </li>
                             <li>
                                 <span>bài viết tổ <i class="fa-solid fa-caret-down"></i></span>
-                                <ul class="sub-menu">
+                                <ul class="sub-menu click-sub-menu">
                                     <li><a href="#to-van-phong" >Tổ văn phòng</a></li>
                                     <li><a href="#to-ngu-van">Tổ Ngữ văn</a></li>
                                     <li><a href="#to-ngoai-ngu">Tổ Ngoại ngữ</a></li>
@@ -158,7 +163,7 @@
                         <div>
                             <ol type="A" >
                                 <li>
-                                    <b>Cơ sở vật chất:</b>
+                                    Cơ sở vật chất:
                                     <ul class="sub-gioi-thieu">
                                         <li>Phòng học: 16 phòng (dãy trước: 09 phòng, dãy sau: 04 phòng, dãy bên : 03 phòng)</li>
                                         <li>Phòng vi tính giảng dạy học sinh: 01 với 35 máy vi tính</li>
@@ -284,7 +289,7 @@
                             khó có thể thay thế cho nhau trong công việc. Vì thế các thành viên hầu hoạt động đồng thời, 
                             linh hoạt mới có thể hỗ trợ nhau hoàn thành công việc “bếp núc” của nhà trường. 
                             Dẫu không trực tiếp đứng lớp, nhưng chúng tôi rất tự hào về công việc của Tổ đảm nhận,
-                            vì hầu như trong mọi thành quả của nhà trường đều có mồ hôi công sức của anh chị em Tổ Hành chính-Quản trị chúng tôi !
+                            vì hầu như trong mọi thành quả của nhà trường đều có mồ hôi công sức của anh chị em Tổ Hành chính-Quản trị chúng tôi!
                         </p>
                         <p>
                             Từ các tổ trưởng Nguyễn Ngọc Dũng, Nguyễn Hàng, Võ Văn Ngọc, Huỳnh Bá Kỷ, 
@@ -344,6 +349,10 @@
                                 <img src="./assets/img/anh-giao-vien-to-van-2.jpg" alt="ảnh lễ trao thưởng cho gió viên tổ văn">
                                 <p>Ảnh lễ trao thưởng cho giáo viên tổ Ngữ văn</p>
                             </div>
+                            <div>
+                                <img src="./assets/img/anh-to-NN.jpg" alt="ảnh lễ trao thưởng cho gió viên tổ văn">
+                                <p>-Ảnh lễ trao thưởng cho giáo viên tổ Ngữ Văn năm 2023-</p>
+                            </div>
                         </div>
                         <p>
                             Ngoài ra, tổ cũng đã tổ chức nhiều sinh hoạt CLB văn học trong tập thể giáo viên và học sinh, tham gia 100% 
@@ -361,51 +370,41 @@
 
                 <div id="to-ngoai-ngu">
                     <div class="heading">
-                        <h1>Giới thiệu tổ ngữ văn</h1>
+                        <h1>Giới thiệu tổ ngoại ngữ</h1>
                     </div>
                     <div class="content-gioi-thieu">
-                        <h4>"chặn đường đã qua"</h4>
+                        <h4>"dàn đông ca"</h4>
                         <div class="anh-minh-hoa">
-                            <img src="./assets/img/anh-ngu-van.jpg" alt="">
+                            <img src="./assets/img/anh-minh-hoa-2.jpg" alt="">
                         </div>
-                        <p>Tổ Ngữ văn là tổ có  số lượng giáo viên khá đông, 
-                            hoàn toàn là nữ. Năm học đầu tiên 1997-1998, tổ gồm 7 giáo viên nữ trong đó có 4 giáo viên cấp II 
-                            và 2 giáo viên cấp III.  Hai năm sau, trường chính thức trở thành trường THPT, số lượng giáo viên 
-                            trong tổ được tăng dần mỗi năm. Năm học 2006-2007 tổ đã có 9 giáo viên nữ. Bên cạnh những giáo viên 
-                            tuổi đời và tuổi nghề còn trẻ về công tác sau khi tốt nghiệp các trường Đại học sư phạm Huế, Đại học 
-                            sư phạm Quy Nhơn là các cô giáo có nhiều kinh nghiệm giảng dạy như cô Võ Thị Sơn, cô Huỳnh Thị Tuyết, cô Nguyễn Thị Lệ Hà, cô Phạm Thị Hồng về đây công tác từ các trường THPT trong tỉnh.
+                        <p>Mỗi khi nói về tổ Ngoại Ngữ  của trường THPT Lê Quý Đôn nhiều đồng nghiệp khách quan công nhận tổ toàn là nữ và “đều tăm tắp”.
                         </p>
                         <p>
-                            Hiện nay, tổ có 8 người, có 5 đảng viên, nhiều giáo viên đạt danh hiệu Giáo viên Giỏi, CSTĐ cấp cơ sở, 
-                            CSTĐ CẤP Tỉnh. Tuy 100% là giáo viên nữ nhưng tổ Ngữ văn là một trong những tổ chuyên  môn vững mạnh, 
-                            đã đóng góp nhiều thành tích xuất sắc cho nhà trường.
+                            Tổ Ngoại Ngữ  gồm có  8 thành viên, có 1 đảng viên. Tất cả giáo viên trong  tổ có trình độ chuyên môn vững vàng, năng động và nhiệt tình trong công tác. 
                         </p>
                         <p>
-                            Qua hơn hai mươi năm, tổ đã được UBND tỉnh Quảng Nam công nhận là Tập thể Lao động xuất sắc; đạt giải A 
-                            trong phong trào viết thư Quốc tế UPU toàn tỉnh và toàn quốc; lên tục nhiều năm đạt giải trong Hội thi 
-                            thuyết trình văn học (giải nhất, nhiều giải ba và khuyến khích). Các kỳ thi học sinh giỏi toàn tỉnh nhìn 
-                            chung đều có kết quả đáng khích lệ (giải nhì đồng đội lớp 10 và nhiều giải khuyến khích hằng năm ở toàn cấp).
+                            Trong những năm qua, tổ Ngoại Ngữ đã không ngừng phấn đấu hoàn thành tốt công việc giảng dạy, công tác giáo dục học sinh và các công tác khác của nhà trường. Các thành viên trong tổ Ngoại Ngữ đều có tinh thần ham học hỏi, luôn luôn chú ý trau dồi chuyên môn, áp dụng đổi mới phương pháp để việc giảng dạy đuợc tốt hơn. Hằng năm, tổ Ngoại Ngữ tổ chức sinh hoạt ngoại khoá, đố vui, tạo ra sân chơi bổ ích giúp học sinh tăng sự hứng thú trong việc học Tiếng Anh. Bên cạnh việc bồi dưỡng học sinh giỏi, tổ còn chú ý đến phụ đạo học sinh yếu kém, nên chất lượng học tập của học sinh ngày càng được tăng lên và đã có những học sinh đạt giải tỉnh.
+                            Trong những năm qua, tổ Ngoại Ngữ đã không ngừng phấn đấu hoàn thành tốt công việc giảng dạy, công tác giáo dục học sinh và các công tác khác của nhà trường. Các thành viên trong tổ Ngoại Ngữ đều có tinh thần ham học hỏi, luôn luôn chú ý trau dồi chuyên môn, áp dụng đổi mới phương pháp để việc giảng dạy đuợc tốt hơn. Hằng năm, tổ Ngoại Ngữ tổ chức sinh hoạt ngoại khoá, đố vui, tạo ra sân chơi bổ ích giúp học sinh tăng sự hứng thú trong việc học Tiếng Anh. Bên cạnh việc bồi dưỡng học sinh giỏi, tổ còn chú ý đến phụ đạo học sinh yếu kém, nên chất lượng học tập của học sinh ngày càng được tăng lên và đã có những học sinh đạt giải tỉnh.
                         </p>
                         <div class="anh-to-van">
                             <div>
                                 <img src="./assets/img/anh-giao-vien-to-van.jpg" alt="ảnh giáo viên tổ ngữ văn đoạt giải cấp tỉnh">
-                                <p>Ảnh giáo viên tổ Ngữ văn đoạt giải cấp tỉnh</p>
+                                <p>-Ảnh giáo viên tổ Ngoại Ngữ đoạt giải cấp tỉnh-</p>
                             </div>
                             <div>
                                 <img src="./assets/img/anh-giao-vien-to-van-2.jpg" alt="ảnh lễ trao thưởng cho gió viên tổ văn">
-                                <p>Ảnh lễ trao thưởng cho giáo viên tổ Ngữ văn</p>
+                                <p>-Ảnh lễ trao thưởng cho giáo viên tổ Ngoại Ngữ-</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/anh-to-NN.jpg" alt="ảnh lễ trao thưởng cho gió viên tổ văn">
+                                <p>-Ảnh lễ trao thưởng cho giáo viên tổ Ngoại ngữ năm 2023-</p>
                             </div>
                         </div>
                         <p>
-                            Ngoài ra, tổ cũng đã tổ chức nhiều sinh hoạt CLB văn học trong tập thể giáo viên và học sinh, tham gia 100% 
-                            viết sáng kiến kinh nghiệm và thi làm đồ dùng dạy học do nhà trường và công đoàn tổ chức. Hầu hết giáo viên 
-                            trong tổ đều sử dụng được máy vi tính, soạn giáo án điện tử dạy trên phần mềm Power Point, soạn bài E-learning. 
+                            Là một trong những tổ chuyên môn sớm ứng dụng công nghệ thông tin vào giảng dạy: thiết kế bài dạy bằng máy tính, sử dụng nhiều phần mềm soạn giáo án điện tử, sử dụng nhuần nhuyễn phần mềm soạn thảo đề trắc nghiệm, làm nhiều đồ dùng dạy học. Đặc biệt trong Hội thi đồ dùng dạy học lần thứ 2 của trường năm học 2006-2007, tổ đã đạt giải đặc biệt với CD các bài giảng  tự động rất chất lượng.
                         </p>
                         <p>
-                            Thành quả mà tổ Văn đã đạt được là nhờ sự đoàn kết của các thành viên trong tổ, sự nhiệt tình và ý thức trách 
-                            nhiệm của mỗi cá nhân. Nhìn lại chặng đường đã qua, tổ Ngữ văn luôn quyết tâm, nỗ lực, đổi mới; tiếp tục phát 
-                            huy thế mạnh của một tập thể đoàn kết-nhiệt tình-năng động để đạt nhiều thành tích cao hơn góp phần xây dựng 
-                            nhà trường vững mạnh trong thời kỳ mới.
+                            Trong những năm qua, tổ Ngoại Ngữ đã không ngừng phấn đấu hoàn thành tốt công việc giảng dạy, công tác giáo dục học sinh và các công tác khác của nhà trường. Các thành viên trong tổ Ngoại Ngữ đều có tinh thần ham học hỏi, luôn luôn chú ý trau dồi chuyên môn, áp dụng đổi mới phương pháp để việc giảng dạy đuợc tốt hơn. Hằng năm, tổ Ngoại Ngữ tổ chức sinh hoạt ngoại khoá, đố vui, tạo ra sân chơi bổ ích giúp học sinh tăng sự hứng thú trong việc học Tiếng Anh. Bên cạnh việc bồi dưỡng học sinh giỏi, tổ còn chú ý đến phụ đạo học sinh yếu kém, nên chất lượng học tập của học sinh ngày càng được tăng lên và đã có những học sinh đạt giải tỉnh.
                         </p>
                     </div>
 
@@ -447,5 +446,44 @@
     </div>
     <script src="./javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="./javascript/info.js"></script>
+    <script>
+        var header = document.getElementById('header');
+        var tabletMenu = document.getElementById('tablet-menu');    
+        var headerHeight = header.clientHeight;
+    
+        //Đóng/mở tablet menu
+        tabletMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+    
+            if (isClosed) {
+                header.style.height = '100%';
+            } else {
+                header.style.height = null;
+            }
+        }
+        // Trong đoạn code trên, clientHeight là một thuộc tính của DOM (Document Object Model) được sử dụng để lấy chiều cao hiển thị của một phần tử trong trình duyệt web. Nó đo lường chiều cao của phần nội dung của phần tử, bao gồm cả nội dung thực tế và khoảng cách đệm, nhưng không bao gồm các biên (margin), phần border, và thanh cuộn (scrollbar).
+    
+        // Trong đoạn code của bạn, header là một phần tử DOM có id là "header". header.clientHeight được sử dụng để lấy chiều cao hiển thị của phần tử "header" ban đầu khi trang web được tải lần đầu.
+    
+        // Đoạn mã còn lại của bạn liên quan đến việc đóng/mở menu di động khi người dùng nhấp vào phần tử có id là "mobile-menu". Khi người dùng nhấp vào "mobile-menu", đoạn mã kiểm tra nếu chiều cao hiển thị của "header" hiện tại bằng với headerHeight (chiều cao ban đầu của "header"), điều này ngụ ý rằng menu đang đóng. Trong trường hợp này, nó sẽ thay đổi chiều cao của "header" thành 'auto', tức là cho phép nó mở rộng tự động để hiển thị nội dung.
+    
+        // Nếu chiều cao hiển thị của "header" không bằng headerHeight, điều này ngụ ý rằng menu đang mở. Trong trường hợp này, nó sẽ đặt chiều cao của "header" thành null, có nghĩa là bỏ bất kỳ chiều cao cố định nào, để phần tử "header" thu nhỏ lại như ban đầu.
+    
+        // Như vậy, đoạn mã này cho phép bạn đóng và mở menu di động bằng cách thay đổi chiều cao của phần tử "header" dựa trên việc so sánh chiều cao hiển thị hiện tại với chiều cao ban đầu của nó.
+    
+        var club = document.getElementById('tablet-club-category');
+        var tabletClub = document.getElementById('tablet-club-category__heading');
+        var clubHeight = club.clientHeight;
+    
+        tabletClub.onclick = function() {
+          var isClosed = club.clientHeight === clubHeight;
+    
+          if(isClosed) {
+            club.style.height = '100%';
+          } else {
+            club.style.height = null;
+          }
+        }
+      </script>
 </body>
 </html>

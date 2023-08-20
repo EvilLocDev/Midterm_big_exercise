@@ -3,12 +3,19 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
 /* PC 1024px */
 @media (min-width: 1024px) {
-    
+    .side-bar-info{
+        display: block !important;
+    }
+
+    .open-menu{
+        display: none!important;
+    }
 }
 
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
 /*Mobile*//*739px*/
 @media (max-width: 739px) {
+<<<<<<< HEAD
     /* index */
     #slider {
         margin: 106px auto 0;
@@ -24,11 +31,68 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     .tablet-modal-container {
         width: 360px !important;
+=======
+    /* Đưa menu ra */
+    @keyframes move-menu {
+        from {
+            margin-left: -559px;
+            display: none;
+        }
+        to {
+            margin-left: 15px;
+            display: block;
+        }
+    }
+    .move-menu{
+        animation: move-menu 0.5s;
+    }
+
+    /* đưu menu vào */
+    @keyframes remove-menu {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: -559px;
+        }
+    }
+
+    .remove-menu{
+        animation: remove-menu 0.5s;
+    }
+
+    /* đưa button close ra */
+    @keyframes move-button {
+        from {
+            margin-right: 590px;
+        }
+        to {
+            margin-right: 0px;
+        }
+    }
+
+    .move-button{
+        animation: move-button 0.5s;
+    }
+
+    /* đưu button close vào */
+    @keyframes remove-button {
+        from {
+            margin-right: 0px;
+        }
+        to {
+            margin-right: 590px;
+        }
+    }
+
+    .remove-button{
+        animation: remove-button 0.5s;
+>>>>>>> 3a27c0e8daef8d1b3121ee36e7eee7312239df9b
     }
 
     /* map */
     .flex {
-        display: block;
+        display: block !important;
         margin: 0;
     }
 
@@ -69,20 +133,22 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
 
     .side-bar-info{
-        display: block;
+        display: none;
         position: fixed;
         z-index: 3;
         border: none;
         width: 95%;
         margin-top: 0;
         margin-left: 0.5%;
-
+        margin-left: 0px;
+        box-shadow: 3px 5px 9px rgb(39, 38, 38);
     }
 
     .open-menu{
-        display: block;
+        display: block !important;
         position: fixed;
-        z-index: 50;
+        z-index: 3;
+        left: 0;
 
     }
 
@@ -90,25 +156,12 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 30px;
         height: 30px;
         margin-top: 0px;
-        margin-left: -10px;
-    }
-
-    .close-menu{
-        display: none; 
-        position: fixed;
-        float: right;
-        z-index: 50;
-        right: 0;
-    }
-
-    .close-menu > button{
-        width: 30px;
-        height: 30px;
-        margin-right: 8px;
+        margin-left: 5px;
+        box-shadow: 3px 3px 3px rgb(77, 72, 72);
     }
 
     .menu{
-        display: none;
+        display: block;
         background-color: #435c8c;
         position: relative;
         border-right: 1px black solid;
@@ -123,7 +176,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
 
     .thong-ke{
-        display: none;
+        display: block;
     }
 
     .side-bar-info > .content-side-bar{
@@ -144,6 +197,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     ul.sub-gioi-thieu{
         padding-right: 0;
+        font-weight: 400;
     }
 
     .main-content h1{
@@ -159,7 +213,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     .box .sub-picture {
         padding: 0.3rem 0 0 0.3rem;
-        width: 35%;
+        width: 30%;
     }
 
     .box .sub-picture > img{
@@ -181,6 +235,30 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .sub-info > .flex > p {
         display: block;
         margin: 0;
+    }
+
+    /* CSS TKB */
+    #thoi-khoa-bieu h2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #thoi-khoa-bieu .flex{
+        display: block;
+    }
+
+    .anh-to-van{
+        display: block;
+    }
+
+    .anh-to-van > div{
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .anh-to-van > div img{
+        width: 100%;
     }
 
     /* Footer */
@@ -298,6 +376,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     /* header */
 
     /* map */
+
     .flex {
         display: block;
         margin: 0;
@@ -319,6 +398,11 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         width: 90%;
         margin: 5px auto;
     }
+
+    .open-menu{
+        display: none!important;
+    }
+
 }
 
 /* Tablet */
@@ -328,10 +412,10 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         position: relative;
         
     }
-
-    
-
     /* ==== Page info ==== */
+    .side-bar-info{
+        display: block !important;
+    }
     .page-info{
         display: flex;
     }
