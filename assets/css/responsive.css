@@ -6,6 +6,10 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .side-bar-info{
         display: block !important;
     }
+    
+    .open-menu{
+        display: none!important;
+    }
 }
 
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
@@ -38,34 +42,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     .remove-menu{
         animation: remove-menu 0.5s;
-    }
-
-    /* đưa button close ra */
-    @keyframes move-button {
-        from {
-            margin-right: 590px;
-        }
-        to {
-            margin-right: 0px;
-        }
-    }
-
-    .move-button{
-        animation: move-button 0.5s;
-    }
-
-    /* đưu button close vào */
-    @keyframes remove-button {
-        from {
-            margin-right: 0px;
-        }
-        to {
-            margin-right: 590px;
-        }
-    }
-
-    .remove-button{
-        animation: remove-button 0.5s;
     }
 
     /* map */
@@ -123,11 +99,10 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
 
     .open-menu{
-        display: block;
+        display: block !important;
         position: fixed;
         z-index: 3;
         left: 0;
-
     }
 
     .open-menu > button{
@@ -136,20 +111,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         margin-top: 0px;
         margin-left: 5px;
         box-shadow: 3px 3px 3px rgb(77, 72, 72);
-    }
-
-    .close-menu{
-        display: none; 
-        position: fixed;
-        float: right;
-        z-index: 50;
-        right: 0px;
-    }
-
-    .close-menu > button{
-        width: 30px;
-        height: 30px;
-        margin-right: 0px;
     }
 
     .menu{
@@ -201,7 +162,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     .box{
         margin-top: 0.3rem;
         display: flex !important;
-    }
+    }cl
 
     .box .sub-picture {
         padding: 0.3rem 0 0 0.3rem;
@@ -394,12 +355,14 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         position: relative;
         
     }
-
     
-
     /* ==== Page info ==== */
     .side-bar-info{
         display: block !important;
+    }
+
+    .open-menu{
+        display: none !important;
     }
     .page-info{
         display: flex;

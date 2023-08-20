@@ -7,7 +7,6 @@ $(document).ready(() => {
             subMenu[i].classList.toggle('block');
         })
     };
-
     // ẩn hiện nội dung thời khóa biểu
     $(".main-content > div:not(#main)").hide();
     $(".menu a").click(function() {
@@ -17,22 +16,48 @@ $(document).ready(() => {
          // click mở nội dung tương ứng
         $(".main-content > div").hide();
         $($(this).attr("href")).show();
-        
     });
 
-    //ẩn nội dung sub-content
-    $(".main-content > div:not(#main)").hide();
-    $(".menu a").click(function() {
-        // click mở tab
-        $(".menu a").parent().removeClass("color-click");
-        $(this).parent().addClass("color-click");
-        // click mở nội dung tương ứng
-        $(".main-content > div").hide();
-        $($(this).attr("href")).show();
-        $(".menu a").not($(this)).parent().removeClass("color-click");
-        
-    });
-    
+    let windowSize = $(window).resize().width();
+    if(windowSize < 740) {
+        $(".open-menu").addClass("block");
+        //CLICK TKB
+        $(".click-menu > li:first-child > a").click(function() {
+            $(".side-bar-info").addClass("remove-menu");
+            $(".side-bar-info").hide(600);
+            $(".open-menu").show(500);
+        })
+
+        // CLICK SUB_MENU
+        $(".click-sub-menu").click(function() {
+            $(".side-bar-info").addClass("remove-menu");
+            $(".side-bar-info").hide(600);
+            $(".open-menu").show(500);
+        })
+        // JS reponsive trên thiết bị di động:
+        $(".open-menu").click(function() {
+            $(".side-bar-info").removeClass("remove-menu");
+            $(".side-bar-info").addClass("move-menu");
+            $(".side-bar-info").show();
+            $(".open-menu").hide();
+        });
+    }
+    else {
+        $(".open-menu").addClass("none");
+        $("page-info").addClass("block");
+        //ẩn nội dung sub-content
+        $(".main-content > div:not(#main)").hide();
+        $(".menu a").click(function() {
+            $(".open-menu").hide();
+            // click mở tab
+            $(".menu a").parent().removeClass("color-click");
+            $(this).parent().addClass("color-click");
+            // click mở nội dung tương ứng
+            $(".main-content > div").hide();
+            $($(this).attr("href")).show();
+            $(".menu a").not($(this)).parent().removeClass("color-click");
+        });
+    }
     // Đọc dữ liệu từ file JSON
     // ===== CHUYÊN MÔN =====
     fetch("./json/chuyen-mon.json")
@@ -198,33 +223,5 @@ $(document).ready(() => {
             `;
         }
         place.innerHTML = out;
-    })
-
-    // JS reponsive trên thiết bị di động:
-    $(".open-menu").click(function() {
-        $(".side-bar-info").removeClass("remove-menu");
-        $(".side-bar-info").addClass("move-menu");
-        $(".side-bar-info").show();
-        $(".close-menu").addClass("move-button");
-        $(".close-menu").show();
-        $(".open-menu").hide();
-    });
-    $(".close-menu").click(function() {
-        $(".side-bar-info").addClass("remove-menu");
-        $(".side-bar-info").hide(600);
-        $(".close-menu").addClass("remove-button");
-        $(".close-menu").removeClass("remove-button");
-        $(".close-menu").hide(500);
-        $(".open-menu").show(500);
-        $(".close-menu").addClass("move-button");
-        $(".close-menu").hide(500);
-    });
-
-    $(windown).resize(function() {
-        $(".side-bar-info").addClass("block");
-    })
-
-    $("click-menu > li:first-child > a").click(function() {
-        alert("hello");
     })
 })

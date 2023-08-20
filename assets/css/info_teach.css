@@ -16,15 +16,6 @@ section{
     display: flex;
 }
 
-.open-menu{
-    display: none;
-}
-
-.close-menu{
-    display: none;
-}
-
-
 .side-bar-info{
     display: block;
     width: 15%;
