@@ -70,7 +70,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     /* map */
     .flex {
-        display: block;
+        display: block !important;
         margin: 0;
     }
 
