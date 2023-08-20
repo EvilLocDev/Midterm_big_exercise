@@ -15,55 +15,61 @@
 <body>
     <div class="school">
         <!-- Header -->
-        <header class="school_header">
-            <!-- Navbar -->
-            <div class="grid">
-                <nav class="header-navbar">
-                    <div class="navbar-logo">
-                        <a href="" class="navbar-logo-link">
-                            <img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt="" class="navbar-logo-img">
-                        </a>
-                    </div>
-                    <div class="navbar-tool">
-                        <a href="" class="tool--icon">
-                            <i class="tool--icon--link fa-solid fa-magnifying-glass"></i>
-                        </a>
-
-                        <a href="" class="tool--icon">
-                            <i class="tool--icon--link fa-solid fa-bars"></i>
-                        </a>
-                    </div>
-                    <div class="container-navbar-list">
-                        <ul class="navbar-list">
-                            <li class="navbar-list__item">
-                              <a href="./index.html" class="navbar-list__item-link">Trang chủ</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="./info_teach.html" class="navbar-list__item-link">Giới thiệu</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="./address.html" class="navbar-list__item-link">Cơ sở giáo dục</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="" class="navbar-list__item-link">Thông tin</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="" class="navbar-list__item-link">Chuyên môn</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="" class="navbar-list__item-link">Đoàn thể</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="" class="navbar-list__item-link">Biểu mẫu</a>
-                            </li>
-                            <li class="navbar-list__item">
-                              <a href="" class="navbar-list__item-link">Liên kết</a>
-                            </li>
-                          </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+    <header class="school_header" id="header">
+        <!-- Navbar -->
+        <nav class="header-navbar">
+          <div class="navbar-logo">
+            <a href="" class="navbar-logo-link">
+              <img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt="" class="navbar-logo-img">
+            </a>
+          </div>
+          <div class="navbar-tool">
+            <input type="text" class="tool--search-content" name="search-content" placeholder="Tìm kiếm">
+  
+            <a class="tool--icon">
+              <i class="tool--icon--link fa-solid fa-magnifying-glass" id="search"></i>
+            </a>
+          </div>
+          <div class="container-navbar-list">
+            <ul class="navbar-list">
+              <!-- Tablet menu button -->
+              <li class="tablet-menu">
+                <a class="tablet-menu__item-link" id="tablet-menu">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </li>
+              <li class="navbar-list__item tablet-list__item">
+                <a disabled="disabled" class="tablet-navbar-list__item-link"><img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt=""class="tablet-navbar-logo-img"></a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./index.html" class="navbar-list__item-link">Trang chủ</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./info_teach.html" class="navbar-list__item-link">Giới thiệu</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="./address.html" class="navbar-list__item-link">Cơ sở giáo dục</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Thông tin</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Chuyên môn</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Đoàn thể</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Biểu mẫu</a>
+              </li>
+              <li class="navbar-list__item">
+                <a href="" class="navbar-list__item-link">Liên kết</a>
+              </li>
+            
+            </ul>
+          </div>
+        </nav>
+      </header>
         <!-- Kể thúc Navbar -->
 
         <!-- Slider -->
