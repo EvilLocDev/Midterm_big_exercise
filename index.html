@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
   <div class="school">
     <!-- Header -->
-    <header class="school_header">
+    <header class="school_header" id="header">
       <!-- Navbar -->
       <nav class="header-navbar">
         <div class="navbar-logo">
@@ -26,13 +27,18 @@
           <a class="tool--icon">
             <i class="tool--icon--link fa-solid fa-magnifying-glass" id="search"></i>
           </a>
-
-          <a href="" class="tool--icon">
-            <i class="tool--icon--link fa-solid fa-bars"></i>
-          </a>
         </div>
         <div class="container-navbar-list">
           <ul class="navbar-list">
+            <!-- Tablet menu button -->
+            <li class="tablet-menu">
+              <a class="tablet-menu__item-link" id="tablet-menu">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </li>
+            <li class="navbar-list__item tablet-list__item">
+              <a disabled="disabled" class="tablet-navbar-list__item-link"><img src="./assets/img/HIGH_SCHOOL_LOGO.png" alt=""class="tablet-navbar-logo-img"></a>
+            </li>
             <li class="navbar-list__item">
               <a href="./index.html" class="navbar-list__item-link">Trang chu</a>
             </li>
@@ -57,6 +63,7 @@
             <li class="navbar-list__item">
               <a href="" class="navbar-list__item-link">Lien ket</a>
             </li>
+          
           </ul>
         </div>
       </nav>
@@ -292,5 +299,31 @@
   </script>
 
   <script src="/javascript/notification.js"></script>
+
+  <script>
+    var header = document.getElementById('header');
+    var tabletMenu = document.getElementById('tablet-menu');    
+    var headerHeight = header.clientHeight;
+
+    //Đóng/mở tablet menu
+    tabletMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight;
+
+        if (isClosed) {
+            header.style.height = '100%';
+        } else {
+            header.style.height = null;
+        }
+    }
+    // Trong đoạn code trên, clientHeight là một thuộc tính của DOM (Document Object Model) được sử dụng để lấy chiều cao hiển thị của một phần tử trong trình duyệt web. Nó đo lường chiều cao của phần nội dung của phần tử, bao gồm cả nội dung thực tế và khoảng cách đệm, nhưng không bao gồm các biên (margin), phần border, và thanh cuộn (scrollbar).
+
+    // Trong đoạn code của bạn, header là một phần tử DOM có id là "header". header.clientHeight được sử dụng để lấy chiều cao hiển thị của phần tử "header" ban đầu khi trang web được tải lần đầu.
+
+    // Đoạn mã còn lại của bạn liên quan đến việc đóng/mở menu di động khi người dùng nhấp vào phần tử có id là "mobile-menu". Khi người dùng nhấp vào "mobile-menu", đoạn mã kiểm tra nếu chiều cao hiển thị của "header" hiện tại bằng với headerHeight (chiều cao ban đầu của "header"), điều này ngụ ý rằng menu đang đóng. Trong trường hợp này, nó sẽ thay đổi chiều cao của "header" thành 'auto', tức là cho phép nó mở rộng tự động để hiển thị nội dung.
+
+    // Nếu chiều cao hiển thị của "header" không bằng headerHeight, điều này ngụ ý rằng menu đang mở. Trong trường hợp này, nó sẽ đặt chiều cao của "header" thành null, có nghĩa là bỏ bất kỳ chiều cao cố định nào, để phần tử "header" thu nhỏ lại như ban đầu.
+
+    // Như vậy, đoạn mã này cho phép bạn đóng và mở menu di động bằng cách thay đổi chiều cao của phần tử "header" dựa trên việc so sánh chiều cao hiển thị hiện tại với chiều cao ban đầu của nó.
+  </script>
 </body>
 </html>
