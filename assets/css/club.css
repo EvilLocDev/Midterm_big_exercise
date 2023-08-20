@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #1e4287;
+  --red-color: #d61e33;
+  --white-color: #ffffff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+/* Định dạng chung */
+body, html {
+  font-family: "Inconsolata", sans-serif;
+  line-height: 1.6;
+}
+
+.club-top {
+  margin: -8px 8px 0 -8px;
+  position: fixed;
+  width: 100%;
+  display: block;
+  justify-content: start;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+.club-main-menu {
+  display: flex;
+}
+
+/* Phần Links */
+.club-button {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Phần Header */
+.bgimg {
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.club-display-bottomleft,
+.club-display-bottomright {
+  position: absolute;
+  padding: 16px;
+}
+
+.club-display-bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.club-display-bottomright {
+  bottom: 0;
+  right: 0;
+}
+
+.club-center {
+  text-align: center;
+}
+
+.club-text-white {
+  color: white;
+}
+
+.club-text-red {
+  color: var(--red-color);
+}
+
+.club-padding-large {
+  padding: 10px;
+}
+
+/* Phần About */
+.club-leftbar {
+  border-left: 6px solid #ccc;
+  padding-left: 16px;
+}
+
+/* Phần Contact */
+.club-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Phần Footer */
+.club-light-grey {
+  background-color: #f1f1f1;
+}
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .club-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .club-col {
+    width: 100%;
+  }
+
+  .club-padding-64,
+  .club-padding-48 {
+    padding: 24px;
+  }
+
+  .bgimg {
+    padding-bottom: 60px;
+  }
+
+  .club-time {
+    position: relative;
+    top: 320px;
+    width: 100%;
+  }
+  
+  .club-adress {
+    width: 100%;
+  }
+}
+
+/* Club Container */
+.club-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Club Content */
+.club-content {
+  margin: auto;
+  padding: 16px;
+}
+
+/* Club Tag */
+.club-tag {
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Club Wide */
+.club-wide {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}

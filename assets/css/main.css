@@ -269,6 +269,9 @@ input[class="tool--search-content"]::placeholder {
 .club-category {
   background-color: #E5E5E5;
   border-radius: 2px;
+  box-shadow: 2px 5px 5px #333;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .club-category__heading {
@@ -347,7 +350,7 @@ input[class="tool--search-content"]::placeholder {
   align-items: center;
   justify-content: center;
   display: none;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .open {
@@ -392,6 +395,7 @@ input[class="tool--search-content"]::placeholder {
   padding: 12px;
   opacity: 0.8;
   cursor: pointer;
+  z-index: 100;
 }
 
 .modal-close:hover {
@@ -418,6 +422,7 @@ input[class="tool--search-content"]::placeholder {
   background-color: var(--primary-color);
   position: relative;
   padding: 4px 0;
+  z-index: 999;
 }
 
 .footer__adress {
@@ -460,4 +465,21 @@ input[class="tool--search-content"]::placeholder {
   padding: 32px 0 56px 0;
   margin-bottom: 0;
   background-color: var(--primary-color);
+}
+
+#goToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#goToTopBtn.show {
+  display: block;
 }

@@ -9,6 +9,22 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
 /*Mobile*//*739px*/
 @media (max-width: 739px) {
+    /* index */
+    #slider {
+        margin: 106px auto 0;
+    }
+
+    .mobile-place-item {
+        width: 100%;
+    }
+
+    .grid__column-2 {
+        width: 248px !important;
+    }
+
+    .tablet-modal-container {
+        width: 360px !important;
+    }
 
     /* map */
     .flex {
@@ -226,6 +242,10 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         height: 44px;
         overflow: hidden;
     }
+
+    .tablet-modal-container {
+        width: 600px;
+    }
 }
 
 /* Trường hợp đặt biệt vì xung đột giữa logo và navigation */
@@ -251,6 +271,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
     }
     
     .navbar-list {
+        z-index: 99;
         display: block;
     }
 
