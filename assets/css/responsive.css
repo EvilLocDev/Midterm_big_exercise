@@ -190,6 +190,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     ul.sub-gioi-thieu{
         padding-right: 0;
+        font-weight: 500;
     }
 
     .main-content h1{
