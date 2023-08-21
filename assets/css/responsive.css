@@ -15,7 +15,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 /* ==== ĐIỆN THOẠI DI ĐỘNG CHIỀU DỌC ==== */
 /*Mobile*//*739px*/
 @media (max-width: 739px) {
-<<<<<<< HEAD
     /* index */
     #slider {
         margin: 106px auto 0;
@@ -31,7 +30,7 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
 
     .tablet-modal-container {
         width: 360px !important;
-=======
+    }
     /* Đưa menu ra */
     @keyframes move-menu {
         from {
@@ -85,9 +84,8 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         }
     }
 
-    .remove-button{
+    .remove-button {
         animation: remove-button 0.5s;
->>>>>>> 3a27c0e8daef8d1b3121ee36e7eee7312239df9b
     }
 
     /* map */
@@ -295,8 +293,6 @@ Tablet: 740px -> 1023 Mobile: < 740px*/
         font-size: 0.8rem;
         line-height: 2;
     }
-    
-
 }
 
 /*Tablet & Mobile*//*1023px*/
