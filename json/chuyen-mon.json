@@ -30,7 +30,7 @@
         "member": "Giáo viên và học sinh"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Thông báo lịch đăng kí học nghề bổ sung",
         "image": "./assets/img/thong-bao.jpg",
         "link": "#",
@@ -39,4 +39,5 @@
         "comment": 2,
         "member": "Giáo viên và học sinh"
     }
+
 ]

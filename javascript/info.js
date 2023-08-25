@@ -79,7 +79,7 @@ $(document).ready(() => {
         }
         place.innerHTML = out;
     })
-
+        
     // ===== CUỘC THI =====
     fetch("./json/cuoc-thi.json")
     .then(function(response) {
